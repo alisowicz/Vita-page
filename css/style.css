@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+.main-page {
+  width: 100% vw;
+  background-color: white;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif; }
+
+.section {
+  width: 100%;
+  padding: 0; }
+
+.nav_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row; }
+  .nav_container .logo {
+    background-image: url("images/logo.png");
+    width: 180px;
+    height: auto;
+    z-index: 10;
+    background-size: contain;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding-right: 600px; }
+  .nav_container .box {
+    margin-right: 30px;
+    height: 100px;
+    padding: 10px 0; }
+    .nav_container .box p {
+      padding: 30px 0;
+      white-space: nowrap;
+      font-weight: bold; }
+
+.window_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .window_container .col {
+    background-size: cover;
+    width: 45%;
+    height: 235px;
+    margin: 0 30px 30px 30px;
+    align-items: center;
+    background-repeat: no-repeat; }
+  .window_container .window_row-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+    .window_container .window_row-up .col-1 {
+      background-image: url("images/family.jpeg"); }
+    .window_container .window_row-up .col-2 {
+      background-image: url("images/house.jpeg"); }
+  .window_container .window_row-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+    .window_container .window_row-bottom .col-3 {
+      background-image: url("images/foto.jpg"); }
+    .window_container .window_row-bottom .col-4 {
+      background-image: url("images/holiday.jpeg"); }
+
+.about {
+  background-color: rgba(0, 82, 154, 0.17); }
+
+.about_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row; }
+  .about_container .split {
+    width: 45%; }
+  .about_container .split-left {
+    background-image: url("images/about.jpeg");
+    background-size: cover;
+    margin: 0 60px 0px 0px;
+    align-items: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 20px); }
+  .about_container .split-right {
+    padding: 80px 10px; }
+    .about_container .split-right .split-right-h1 {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 30px; }
+    .about_container .split-right .split-right-p {
+      font-size: 21px;
+      margin-bottom: 30px;
+      text-align: left; }
+    .about_container .split-right .split-right-h3 {
+      color: #494a49;
+      font-size: 11px; }
+
+/*# sourceMappingURL=style.css.map */

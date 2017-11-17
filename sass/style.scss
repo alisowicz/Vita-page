@@ -1,0 +1,119 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.main-page{
+  width: 100%vw;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+.section{
+  width: 100%;
+  padding: 0;
+}
+.nav_container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+      .logo{
+        background-image: url("images/logo.png");
+        width: 180px;
+        height: auto;
+        z-index: 10;
+        background-size: contain;
+        align-items: center;
+        background-repeat: no-repeat;
+        padding-right: 600px;
+      }
+        .box{
+          margin-right: 30px;
+          height: 100px;
+          padding: 10px 0;
+
+            p{
+              padding: 30px 0;
+              white-space: nowrap;
+              font-weight: bold;
+            }
+        }
+}
+.window_container{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+        .col{
+          background-size: cover;
+          width: 45%;
+          height: 235px;
+          margin: 0 30px 30px 30px;
+          align-items: center;
+          background-repeat: no-repeat;
+        }
+        .window_row-up{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+            .col-1{
+              background-image: url("images/family.jpeg");
+            }
+            .col-2{
+              background-image: url("images/house.jpeg");
+            }
+        }
+        .window_row-bottom{
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+            .col-3{
+              background-image: url("images/foto.jpg");
+            }
+            .col-4{
+              background-image: url("images/holiday.jpeg");
+            }
+        }
+    }
+.about{
+  background-color: rgba(0, 82, 154, 0.17);
+}
+.about_container{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+    .split{
+      width: 45%;
+    }
+    .split-left{
+      background-image: url("images/about.jpeg");
+      background-size: cover;
+      margin: 0 60px 0px 0px;
+      align-items: center;
+      background-repeat: no-repeat;
+      height:calc(100vh - 20px);
+    }
+    .split-right{
+      padding: 80px 10px;
+      .split-right-h1{
+        font-size: 35px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+      .split-right-p{
+        font-size: 21px;
+        margin-bottom: 30px;
+        text-align: left;
+      }
+      .split-right-h3{
+        color: rgb(73, 74, 73);
+        font-size: 11px;
+      }
+    }
+
+}
