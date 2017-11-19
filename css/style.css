@@ -11,7 +11,8 @@
 
 .section {
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  margin-bottom: 10px; }
 
 .nav_container {
   width: 90%;
@@ -48,7 +49,10 @@
     height: 235px;
     margin: 0 30px 30px 30px;
     align-items: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74);
+    -moz-box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74);
+    box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74); }
   .window_container .window_row-up {
     display: flex;
     justify-content: center;
@@ -67,36 +71,61 @@
       background-image: url("images/holiday.jpeg"); }
 
 .about {
-  background-color: rgba(0, 82, 154, 0.17); }
+  background-color: rgba(0, 82, 154, 0.17);
+  padding: 40px 0; }
 
-.about_container {
+.container {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   flex-direction: row; }
-  .about_container .split {
+  .container .split {
     width: 45%; }
-  .about_container .split-left {
-    background-image: url("images/about.jpeg");
+  .container .allSplit, .container .about_split-right .split-right-h1 {
+    font-size: 35px;
+    color: #005296;
+    font-weight: bold;
+    margin-bottom: 30px; }
+  .container .allImg, .container .about_split-left, .container .product-life-split-right, .container .product-car-split-left {
     background-size: cover;
-    margin: 0 60px 0px 0px;
     align-items: center;
     background-repeat: no-repeat;
-    height: calc(100vh - 20px); }
-  .about_container .split-right {
+    height: calc(100vh - 100px);
+    -webkit-box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74);
+    -moz-box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74);
+    box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74); }
+  .container .about_split-left {
+    background-image: url("images/about.jpeg"); }
+  .container .about_split-right {
     padding: 80px 10px; }
-    .about_container .split-right .split-right-h1 {
-      font-size: 35px;
-      font-weight: bold;
-      margin-bottom: 30px; }
-    .about_container .split-right .split-right-p {
-      font-size: 21px;
+    .container .about_split-right .split-right-h1 {
+      margin: 0 60px 0 0; }
+    .container .about_split-right .split-right-p {
+      font-size: 16px;
       margin-bottom: 30px;
       text-align: left; }
-    .about_container .split-right .split-right-h3 {
+    .container .about_split-right .split-right-h3 {
       color: #494a49;
       font-size: 11px; }
+
+.product-life {
+  padding: 40px 0; }
+
+.split-left-p {
+  font-size: 16px;
+  text-align: right; }
+
+.product-life-split-right {
+  background-image: url("images/infamily.jpeg");
+  margin: 0 0 0 60px; }
+
+.product-car {
+  padding: 40px 0; }
+
+.product-car-split-left {
+  background-image: url("images/incar.jpg");
+  margin: 0 60px 0 0; }
 
 /*# sourceMappingURL=style.css.map */

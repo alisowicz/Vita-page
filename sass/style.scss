@@ -12,6 +12,7 @@
 .section{
   width: 100%;
   padding: 0;
+  margin-bottom: 10px;
 }
 .nav_container{
     width: 90%;
@@ -53,6 +54,9 @@
           margin: 0 30px 30px 30px;
           align-items: center;
           background-repeat: no-repeat;
+          -webkit-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
+          -moz-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
+          box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
         }
         .window_row-up{
           display: flex;
@@ -79,8 +83,9 @@
     }
 .about{
   background-color: rgba(0, 82, 154, 0.17);
+  padding: 40px 0;
 }
-.about_container{
+.container{
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -90,23 +95,33 @@
     .split{
       width: 45%;
     }
-    .split-left{
-      background-image: url("images/about.jpeg");
+    .allSplit{
+      font-size: 35px;
+      color: rgb(0, 82, 150);
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    .allImg{
       background-size: cover;
-      margin: 0 60px 0px 0px;
       align-items: center;
       background-repeat: no-repeat;
-      height:calc(100vh - 20px);
+      height:calc(100vh - 100px);
+      -webkit-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
+      -moz-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
+      box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
     }
-    .split-right{
+    .about_split-left{
+      background-image: url("images/about.jpeg");
+      @extend.allImg ;
+    }
+    .about_split-right{
       padding: 80px 10px;
       .split-right-h1{
-        font-size: 35px;
-        font-weight: bold;
-        margin-bottom: 30px;
+        @extend.allSplit;
+        margin: 0 60px 0 0;
       }
       .split-right-p{
-        font-size: 21px;
+        font-size: 16px;
         margin-bottom: 30px;
         text-align: left;
       }
@@ -115,5 +130,26 @@
         font-size: 11px;
       }
     }
+}
 
+.product-life{
+  padding: 40px 0;
+}
+.split-left-p{
+  font-size: 16px;
+  text-align: right;
+}
+.product-life-split-right{
+  background-image: url("images/infamily.jpeg");
+  @extend.allImg;
+  margin: 0 0 0 60px;
+}
+
+.product-car{
+  padding: 40px 0;
+}
+.product-car-split-left{
+  background-image: url("images/incar.jpg");
+  @extend.allImg;
+  margin: 0 60px 0 0;
 }
