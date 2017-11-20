@@ -212,10 +212,21 @@
       padding: 28px 28px;
       background-color: rgba(38, 71, 104, 0.29);
       text-align: left; }
-      .screen-three .container_screen-three .box .box-stamp1 {
-        background-image: url("example.png");
-        max-width: 100%;
-        height: auto; }
+      .screen-three .container_screen-three .box .icon {
+        color: white;
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 10px; }
+      .screen-three .container_screen-three .box .icon-heart:before {
+        content: "\e9da"; }
+      .screen-three .container_screen-three .box .icon-home3:before {
+        content: "\e902"; }
+      .screen-three .container_screen-three .box .icon-truck:before {
+        content: "\e9b0"; }
+      .screen-three .container_screen-three .box .icon-airplane:before {
+        content: "\e9af"; }
+      .screen-three .container_screen-three .box .icon-alarm:before {
+        content: "\e950"; }
       .screen-three .container_screen-three .box .box-title {
         color: white;
         font-size: 18px;

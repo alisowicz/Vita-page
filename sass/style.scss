@@ -274,11 +274,27 @@
       background-color: rgba(38, 71, 104, 0.29);
       text-align: left;
 
-      .box-stamp1 {
-        background-image: url("example.png");
-        max-width: 100%;
-        height: auto;
-      }
+        .icon{
+          color: white;
+          text-align: center;
+          font-size: 40px;
+          padding-bottom: 10px;
+        }
+            .icon-heart:before {
+              content: "\e9da";
+            }
+            .icon-home3:before {
+            content: "\e902";
+            }
+            .icon-truck:before {
+            content: "\e9b0";
+            }
+            .icon-airplane:before {
+            content: "\e9af";
+            }
+            .icon-alarm:before {
+            content: "\e950";
+            }
 
       .box-title {
         color: white;
