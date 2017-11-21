@@ -1,8 +1,38 @@
+@import 'variables';
+
 *{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-size: $font-size16;
 }
+
+
+a:link{
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+a:after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid $color-logo-blue;
+  transition: width 0.4s;
+}
+a:hover:after {
+  width: 100%;
+  color: $color-logo-blue !important;
+}
+
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+
 .main-page{
   width: 100%vw;
   background-color: rgb(255, 255, 255);
@@ -29,17 +59,16 @@
         background-size: contain;
         align-items: center;
         background-repeat: no-repeat;
-        padding-right: 600px;
+        padding-right: 480px;
       }
         .box{
-          margin-right: 30px;
           height: 100px;
-          padding: 10px 0;
-
-            p{
+          padding: 10px 30px;
+              p{
               padding: 30px 0;
               white-space: nowrap;
               font-weight: bold;
+
             }
         }
 }
@@ -77,15 +106,15 @@
       width: 100%;
         .partners_h1{
           font-size: 35px;
-          padding-top: 55px;
+          padding-top: 20px;
           text-shadow: 1px 1px rgb(157, 160, 162);
           text-align: center;
-          color: rgb(0, 82, 150);
+          color: $color-logo-blue;
           font-weight: bold;
           margin-bottom: 15px;
         }
         .partners_h3{
-          font-size: 18px;
+          font-size: $font-size18;
           text-align: center;
           line-height: 25px;
           margin: 0 300px;
@@ -200,7 +229,7 @@
   margin-top: 15px;
 }
 .about_container{
-  background-color: rgba(0, 82, 154, 0.17);
+  background-color: $color-bg-fairblue;
   border-radius: 10px;
 
 
@@ -217,7 +246,7 @@
     }
     .allSplit{
       font-size: 22px;
-      color: rgb(0, 82, 150);
+      color: $color-logo-blue;
       font-weight: bold;
       text-shadow: 1px 1px #9da0a2;
       margin-bottom: 30px;
@@ -233,7 +262,7 @@
     }
 
     .about_split-right{
-      padding: 25px 0px;
+      padding: 8px 0px;
 
       .split-right-h1{
         @extend.allSplit;
@@ -241,14 +270,11 @@
         text-align: center;
       }
       .split-right-p{
-        font-size: 18px;
+        font-size: $font-size18;
         text-align: center;
         line-height: 25px;
       }
-      .split-right-h3{
-        color: rgb(73, 74, 73);
-        font-size: 11px;
-      }
+
     }
 }
 
@@ -259,7 +285,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 40px;
+  padding: 13px 40px;
 
   .container_screen-three {
     display: flex;
@@ -298,14 +324,14 @@
 
       .box-title {
         color: white;
-        font-size: 18px;
+        font-size: $font-size18;
         margin-bottom: 10px;
         font-weight: bold;
       }
 
       .box-text {
         color: white;
-        font-size: 12px;
+        font-size: $font-size12;
         font-weight: normal;
         line-height: 20px;
       }
@@ -314,8 +340,9 @@
 }
 
 .contact{
-  background-color: rgba(0, 82, 154, 0.17);
+  background-color: $color-bg-fairblue;
   width: 100%;
+  padding-bottom: 52px;
 }
 .contact_container{
   width: 90%;
@@ -327,18 +354,19 @@
     .place{
       padding: 10px 60px;
         .contact_sign{
-          color: rgb(0, 82, 150);
+          color: $color-logo-blue;
           margin: 10px 0 30px 0;
+          white-space: nowrap;
         }
         .contact_content{
-          font-size: 14px;
+          font-size: $font-size14;
           font-weight: unset;
         }
     }
 }
 #mailform label, .section span {
 color: #444;
-font-size: 14px;
+font-size: $font-size14;
 line-height: 25px;
 }
 
@@ -359,4 +387,15 @@ border: none; color: #fff;
 width: 91px; height: 21px; float: right; margin-right: 3px;
 cursor: pointer; margin-top: 7px;
 border:0px;
+}
+
+
+.scrollup{
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  background: url("images/arrow.png") no-repeat 0px 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
 }

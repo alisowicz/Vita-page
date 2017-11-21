@@ -1,7 +1,30 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1rem; }
+
+a:link {
+  text-decoration: none;
+  color: black;
+  position: relative; }
+
+a:after {
+  content: '';
+  position: absolute;
+  top: 21px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid #005296;
+  transition: width 0.4s; }
+
+a:hover:after {
+  width: 100%;
+  color: #005296 !important; }
+
+a:visited {
+  text-decoration: none;
+  color: black; }
 
 .main-page {
   width: 100% vw;
@@ -29,11 +52,10 @@
     background-size: contain;
     align-items: center;
     background-repeat: no-repeat;
-    padding-right: 600px; }
+    padding-right: 480px; }
   .nav_container .box {
-    margin-right: 30px;
     height: 100px;
-    padding: 10px 0; }
+    padding: 10px 30px; }
     .nav_container .box p {
       padding: 30px 0;
       white-space: nowrap;
@@ -68,14 +90,14 @@
   width: 100%; }
   .partners .partners_h1 {
     font-size: 35px;
-    padding-top: 55px;
+    padding-top: 20px;
     text-shadow: 1px 1px #9da0a2;
     text-align: center;
     color: #005296;
     font-weight: bold;
     margin-bottom: 15px; }
   .partners .partners_h3 {
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
     line-height: 25px;
     margin: 0 300px;
@@ -182,17 +204,14 @@
     -moz-box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74);
     box-shadow: 5px 3px 26px 7px rgba(143, 143, 143, 0.74); }
   .container .about_split-right {
-    padding: 25px 0px; }
+    padding: 8px 0px; }
     .container .about_split-right .split-right-h1 {
       margin: 0 0 12px 0;
       text-align: center; }
     .container .about_split-right .split-right-p {
-      font-size: 18px;
+      font-size: 1.125rem;
       text-align: center;
       line-height: 25px; }
-    .container .about_split-right .split-right-h3 {
-      color: #494a49;
-      font-size: 11px; }
 
 .screen-three {
   height: calc(100%vh - 40px);
@@ -200,7 +219,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 40px; }
+  padding: 13px 40px; }
   .screen-three .container_screen-three {
     display: flex;
     flex-direction: row;
@@ -229,18 +248,19 @@
         content: "\e950"; }
       .screen-three .container_screen-three .box .box-title {
         color: white;
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 10px;
         font-weight: bold; }
       .screen-three .container_screen-three .box .box-text {
         color: white;
-        font-size: 12px;
+        font-size: 0.75em;
         font-weight: normal;
         line-height: 20px; }
 
 .contact {
   background-color: rgba(0, 82, 154, 0.17);
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 52px; }
 
 .contact_container {
   width: 90%;
@@ -253,14 +273,15 @@
     padding: 10px 60px; }
     .contact_container .place .contact_sign {
       color: #005296;
-      margin: 10px 0 30px 0; }
+      margin: 10px 0 30px 0;
+      white-space: nowrap; }
     .contact_container .place .contact_content {
-      font-size: 14px;
+      font-size: 0.875em;
       font-weight: unset; }
 
 #mailform label, .section span {
   color: #444;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 25px; }
 
 div.section span {
@@ -284,5 +305,14 @@ div.section span {
   cursor: pointer;
   margin-top: 7px;
   border: 0px; }
+
+.scrollup {
+  width: 64px;
+  height: 64px;
+  text-decoration: none;
+  background: url("images/arrow.png") no-repeat 0px 0px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px; }
 
 /*# sourceMappingURL=style.css.map */

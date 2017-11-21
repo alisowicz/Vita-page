@@ -4,16 +4,32 @@
   <meta charset="utf-8">
   <title>VITA Ubezpieczenia i Finanse</title>
   <link rel="stylesheet" href="https://i.icomoon.io/public/temp/e89153e71a/UntitledProject/style.css">
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="css/jquery.scrollTo.min"></script>
+  <script>
+      jquery(function($)
+      {
+        //zresetuj scrolla
+        $.scrollTo(0);
+
+        $('#link3').click(function() { $.scrollTo($('#section about'), 500); });
+      }
+      );
+  </script>
 </head>
 <body>
+
+  <a href="#" class="scrollup"></a>
+
   <section class="main-page">
 
     <nav class="section navigation">
       <div class="nav_container">
             <div class="logo"></div>
-            <div class="box box1"><p>O FIRMIE</p></div>
+            <div class="box box1"><p><a href="#section about">O FIRMIE</a></p></div>
             <div class="box box2"><p>UBEZPIECZENIA</p></div>
             <div class="box box3"><p>PARTNERZY</p></div>
             <div class="box box4"><p>PRACA</p></div>
@@ -25,7 +41,7 @@
       <h2 class="title-main">dobrze, że jesteś...</h2>
     </section>
 
-    <section class="section about">
+    <section id="section about">
       <div class="container about_container">
         <div class="split about_split-right">
           <h1 class="split-right-h1 allSplit">WITAMY W AGENCJI UBEZPIECZENIOWEJ VITA</h1>
@@ -109,9 +125,9 @@
       <div class="container contact_container">
         <div class="place contact_adress">
           <h3 class="contact_sign">SIEDZIBA</h3>
-          <h3 class="contact_content"><b>Centrala:</b><br/><br/>ul. Wierzbięcice 17 lok. 4<br/><br/>61-561 Poznań<br/><br/>Tel. 61 835 25 05<br/><br/>
-          Fax 61 835 25 08<br/><br/>biuro@vita.poznan.pl<br/><br/><b>Oddział:</b><br/><br/>
-          Al. Krasińskiego 13<br/><br/>64-100 Leszno<br/><br/>Tel/fax. 65 529 96 48</h3>
+          <h3 class="contact_content"><b>Centrala:</b><br/><br/>ul. Wierzbięcice 17 lok. 4<br/>61-561 Poznań<br/>Tel. 61 835 25 05<br/>
+          Fax 61 835 25 08<br/>biuro@vita.poznan.pl<br/><br/><b>Oddział:</b><br/><br/>
+          Al. Krasińskiego 13<br/>64-100 Leszno<br/>Tel/fax. 65 529 96 48</h3>
         </div>
         <div class="place contact_form">
           <h3 class="contact_sign">FORMULARZ KONTAKTOWY</h3>
@@ -133,6 +149,11 @@
         </div>
         <div class="place contact_map">
           <h3 class="contact_sign">LOKALIZACJA</h3>
+          <iframe width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                  src="https://maps.google.pl/maps?f=q&amp;source=s_q&amp;hl=pl&amp;geocode=&amp;q=ul.+Wierzbi%C4%99cice+17+lok.+4+61-561+Pozna%C5%84&amp;sll=51.953751,19.134379&amp;sspn=10.245096,19.753418&amp;ie=UTF8&amp;hq=&amp;hnear=Wierzbi%C4%99cice+17,+Pozna%C5%84,+wielkopolskie&amp;t=m&amp;ll=52.401057,16.922722&amp;spn=0.031421,0.051327&amp;z=13&amp;iwloc=&amp;output=embed">
+
+          </iframe>
+
 
         </div>
       </div>
