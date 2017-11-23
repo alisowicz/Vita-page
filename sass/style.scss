@@ -117,6 +117,7 @@ a:visited {
     font-size: 120px;
     letter-spacing: -5px;
     display: flex;
+    text-shadow: 1px 2px $color-logo-blue;
     margin-top: 50px;
     flex: 1;
     position: absolute;
@@ -131,21 +132,14 @@ a:visited {
   width: 100%;
   padding-bottom: 61px;
   .about_partners{
-    width: 42%;
+    width: 54%;
     padding: 100px 0 0 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
   }
 
   .partners_h1 {
-    // font-size: 35px;
-    // padding-top: 20px;
-    // text-shadow: 1px 1px rgb(157, 160, 162);
-    // text-align: center;
-    // color: $color-logo-blue;
-    // font-weight: bold;
-    // margin-bottom: 15px;
     @extend.allSplit;
     margin: 0 0 12px;
     text-align: center;
@@ -153,20 +147,12 @@ a:visited {
   }
 
   .partners_h3 {
-    // font-size: $font-size18;
-    // text-align: center;
-    // line-height: 25px;
-    // margin: 0 300px;
-    // font-weight: unset;
     font-size: $font-size18;
     text-align: center;
     line-height: 25px;
     padding: 20px;
     font-weight: unset;
-    background-color: $color-bg-fairblue;
   }
-
-
 
   .both {
     display: flex;
@@ -287,9 +273,10 @@ a:visited {
 
 .about_content {
   width: 42%;
-  padding: 101px 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 100px;
+  // padding: 100px 0 0 0;
 }
 
 .allSplit {
@@ -300,19 +287,10 @@ a:visited {
   margin-bottom: 30px;
 }
 
-.allImg {
-  background-size: cover;
-  align-items: center;
-  background-repeat: no-repeat;
-  height: calc(100vh - 250px);
-  -webkit-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
-  -moz-box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
-  box-shadow: 5px 3px 26px 7px rgba(143,143,143,0.74);
-}
 
 .about_h1 {
   @extend.allSplit;
-  margin: 0 0 12px;
+  margin: 0 0 30px;
   text-align: center;
 }
 
@@ -320,8 +298,59 @@ a:visited {
   font-size: $font-size18;
   text-align: center;
   line-height: 25px;
-  background-color: $color-bg-fairblue;
 }
+.about_place{
+  width: 80%;
+  // padding: 0 0 180px 0;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.place_box{
+      width: 240px;
+        .icon2{
+          color: $color-logo-blue;
+          text-align: center;
+          font-size: 70px;
+          padding-bottom: 15px;
+          padding-top: 20px;
+        }
+        .place_title{
+          text-align: center;
+          color: black;
+          font-size: $font-size18;
+          margin-bottom: 10px;
+          font-weight: bold;
+        }
+        .place_text1{
+          color: rgba(71, 81, 82, 0.84);
+          font-size: $font-size16;
+          font-weight: normal;
+          text-align: center;
+          line-height: 25px;
+          padding-bottom: 15px;
+        }
+        .place_text2{
+          color: black;
+          font-size: $font-size16;
+          font-weight: normal;
+          text-align: center;
+          line-height: 25px;
+          padding-bottom: 15px;
+        }
+        .icon-room:before {
+          content: "\e900";
+        }
+        .icon-phone:before {
+          content: "\e942";
+        }
+        .icon-envelop:before {
+        content: "\e945";
+        }
+}
+
 
 .offers {
   height: calc(100%vh - 40px);
@@ -401,7 +430,7 @@ a:visited {
 
 .contact_content {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
 
   .place {
@@ -409,13 +438,14 @@ a:visited {
 
     .contact_sign {
       color: $color-logo-blue;
-      margin: 10px 0 30px;
+      margin: 10px 0 30px 0;
       white-space: nowrap;
     }
 
     .contact_content {
       font-size: $font-size14;
       font-weight: unset;
+      display: block;
     }
   }
 }
