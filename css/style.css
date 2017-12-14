@@ -1,11 +1,17 @@
-@media screen and (max-width: 600px) {
-  article {
+@media screen and (max-width: 750px) {
+  .content_offers {
     -webkit-flex-direction: column;
-    flex-direction: column; } }
-@media screen and (min-width: 600px) {
-  article {
-    -webkit-flex-direction: row;
-    flex-direction: row; } }
+    flex-direction: column !important; }
+
+  .about_place {
+    flex-direction: column !important;
+    text-align: center !important; }
+
+  .box6 {
+    display: inline !important; }
+
+  .contact_content {
+    flex-direction: column !important; } }
 * {
   box-sizing: border-box;
   padding: 0;
@@ -50,10 +56,8 @@ a:visited {
   margin-left: auto; }
 
 .nav_container {
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between; }
 
 .logo {
@@ -68,10 +72,11 @@ a:visited {
 
 .menu_box {
   display: flex;
-  justify-content: flex-end; }
-  .menu_box .box {
-    padding: 50px 30px 0 0; }
-    .menu_box .box p {
+  justify-content: space-between;
+  flex-direction: row; }
+  .menu_box .nav_box {
+    margin-right: 16px; }
+    .menu_box .nav_box p {
       padding: 30px 0;
       white-space: nowrap;
       font-weight: bold; }
@@ -93,6 +98,7 @@ a:visited {
     font-size: 120px;
     letter-spacing: -5px;
     display: flex;
+    text-align: center;
     text-shadow: 1px 2px #005296;
     margin-top: 50px;
     flex: 1;
@@ -106,7 +112,6 @@ a:visited {
   width: 100%;
   padding-bottom: 61px; }
   .partners .about_partners {
-    width: 54%;
     padding: 100px 0 0 0;
     margin-left: auto;
     margin-right: auto;
@@ -192,10 +197,23 @@ a:visited {
       background-position: center center; }
 
 .about_content {
-  width: 42%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px; }
+  margin-top: 100px;
+  border: 1px solid #e2e1e1;
+  box-shadow: 1px 1px 13px 4px #b2b3b963;
+  padding: 20px 0 50px 0; }
+  .about_content .circle {
+    width: 25px;
+    height: 25px;
+    border: 7px solid #b2b3b963;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    top: -35px;
+    transform: translate(-50%); }
 
 .allSplit, .partners .partners_h1, .about_h1 {
   font-size: 23px;
@@ -214,11 +232,12 @@ a:visited {
   line-height: 25px; }
 
 .about_place {
-  width: 80%;
+  width: 90%;
   margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between; }
 
 .place_box {
@@ -305,6 +324,9 @@ a:visited {
         line-height: 25px;
         padding-bottom: 15px; }
 
+.box6 {
+  display: none; }
+
 .contact {
   background-color: rgba(0, 82, 154, 0.17);
   width: 100%;
@@ -315,7 +337,8 @@ a:visited {
   justify-content: space-around;
   flex-direction: row; }
   .contact_content .place {
-    padding: 10px 60px; }
+    padding: 10px 60px;
+    text-align: center; }
     .contact_content .place .contact_sign {
       color: #005296;
       margin: 10px 0 30px 0;
