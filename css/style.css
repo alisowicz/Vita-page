@@ -55,7 +55,8 @@ a:visited {
 
 .container-main {
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  width: 90%; }
 
 .nav_container {
   display: flex;
@@ -228,13 +229,13 @@ a:visited {
   justify-content: space-around; }
 
 .place_box {
-  width: 345px;
+  width: 300px;
   border: 1px solid #e2e1e1;
   box-shadow: 1px 1px 4px 3px #b2b3b963;
   padding: 10px; }
   .place_box .circle {
-    width: 25px;
-    height: 25px;
+    width: 49px;
+    height: 49px;
     border: 7px solid #b2b3b963;
     border-radius: 50%;
     background-color: white;
@@ -376,15 +377,6 @@ div.section span {
   margin-top: 7px;
   border: 0; }
 
-.scrollup {
-  width: 64px;
-  height: 64px;
-  text-decoration: none;
-  background: url("images/arrow.png") no-repeat 0 0;
-  position: fixed;
-  right: 50px;
-  bottom: 50px; }
-
 .product-life {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/job.jpeg");
   background-size: cover;
@@ -414,6 +406,7 @@ div.section span {
 
 .list {
   margin-left: 18px;
-  color: white; }
+  color: white;
+  line-height: 23px; }
 
 /*# sourceMappingURL=style.css.map */
