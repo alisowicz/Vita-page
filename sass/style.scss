@@ -13,7 +13,9 @@
   }
   .contact_content{
     flex-direction: column!important;
-
+  }
+  .container1{
+    flex-direction: column;
   }
 
 }
@@ -64,7 +66,6 @@ a:visited {
 }
 
 .container-main {
-  max-width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -112,38 +113,35 @@ a:visited {
   align-items: center;
   flex-direction: column;
 
+
   .screen-background {
-    background-image: url("images/family.jpeg");
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/family.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 40px);
     width: 100%;
+
   }
 
   .title-main {
-    font-size: 120px;
-    letter-spacing: -5px;
-    display: flex;
-    text-align: center;
-    text-shadow: 1px 2px $color-logo-blue;
-    margin-top: 50px;
-    flex: 1;
+    font-size: 30px;
+    text-align: left;
+    text-shadow: 1px 2px #666465;
+    font-style: italic;
+    bottom: 4%;
     position: absolute;
-    justify-content: flex-end;
     color: white;
-    vertical-align: middle;
+    left: 6%;
+    width: 299px;
+    height: 200px;
   }
 }
 
 .partners {
   height: calc(100%vh - 40px);
   width: 100%;
-  padding-bottom: 61px;
   .about_partners{
-    padding: 100px 0 0 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 8px;
+    margin: 100px auto 10px auto;
   }
 
   .partners_h1 {
@@ -157,7 +155,7 @@ a:visited {
     font-size: $font-size18;
     text-align: center;
     line-height: 25px;
-    padding: 20px;
+    padding: 0px 120px;
     font-weight: unset;
   }
 
@@ -278,25 +276,16 @@ a:visited {
   }
 }
 
+.bottom-line{
+  border-bottom: 2px solid $color-logo-blue;
+  width: 145px;
+  margin: 28px auto 10px auto;
+}
+
 .about_content {
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
-  border: 1px solid #e2e1e1;
-  box-shadow: 1px 1px 13px 4px #b2b3b963;
-  padding: 20px 0 50px 0;
-      .circle {
-      width: 25px;
-      height: 25px;
-      border: 7px solid #b2b3b963;
-      border-radius: 50%;
-      background-color: white;
-      position: relative;
-      left: 50%;
-      top: -35px;
-      transform: translate(-50%);
-    }
+  margin: 100px auto;
+
 }
 
 .allSplit {
@@ -327,10 +316,24 @@ a:visited {
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .place_box{
-      width: 240px;
+      width: 345px;
+      border: 1px solid #e2e1e1;
+      box-shadow: 1px 1px 4px 3px #b2b3b963;
+      padding: 10px;
+          .circle {
+          width: 25px;
+          height: 25px;
+          border: 7px solid #b2b3b963;
+          border-radius: 50%;
+          background-color: white;
+          position: relative;
+          left: 50%;
+          top: -22px;
+          transform: translate(-50%);
+    }
         .icon2{
           color: $color-logo-blue;
           text-align: center;
@@ -375,7 +378,7 @@ a:visited {
 
 .offers {
   height: calc(100%vh - 40px);
-  background-image: url("images/health.jpeg");
+  background-image:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/health.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -392,7 +395,6 @@ a:visited {
     margin-right: auto;
 
     .box {
-      background-color: rgba(38, 71, 104, 0.29);
       text-align: left;
       padding-left: 13px;
       width: 450px;
@@ -487,7 +489,6 @@ div.section span {
 
 #mailform input,
 #mailform textarea {
-  border-style: inset;
   background-color: #fff;
 }
 
@@ -517,4 +518,42 @@ div.section span {
   position: fixed;
   right: 50px;
   bottom: 50px;
+}
+.product-life{
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("images/job.jpeg");
+  background-size: cover;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position-y: 64%;
+
+
+}
+.container1{
+  width: 90%;
+  margin: 100px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  }
+
+.split-job{
+  width: 50%;
+  position: relative;
+  right: 25%;
+  padding: 50px 20px;
+    h1{
+      font-size: 23px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 30px;
+    }
+    .split-left-p{
+      color: white;
+    }
+}
+
+.list{
+  margin-left: 18px;
+  color: white;
 }
