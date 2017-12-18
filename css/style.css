@@ -106,7 +106,7 @@ a:visited {
     position: absolute;
     color: white;
     left: 6%;
-    width: 299px;
+    width: 455px;
     height: 200px; }
 
 .partners {
@@ -201,7 +201,7 @@ a:visited {
 
 .about_content {
   width: 90%;
-  margin: 100px auto; }
+  margin: 100px auto 25px auto; }
 
 .allSplit, .partners .partners_h1, .about_h1 {
   font-size: 23px;
@@ -234,9 +234,9 @@ a:visited {
   box-shadow: 1px 1px 4px 3px #b2b3b963;
   padding: 10px; }
   .place_box .circle {
-    width: 49px;
-    height: 49px;
-    border: 7px solid #b2b3b963;
+    width: 35px;
+    height: 35px;
+    border: 11px solid rgba(178, 179, 185, 0.87);
     border-radius: 50%;
     background-color: white;
     position: relative;
@@ -257,13 +257,6 @@ a:visited {
     font-weight: bold; }
   .place_box .place_text1 {
     color: rgba(71, 81, 82, 0.84);
-    font-size: 1em;
-    font-weight: normal;
-    text-align: center;
-    line-height: 25px;
-    padding-bottom: 15px; }
-  .place_box .place_text2 {
-    color: black;
     font-size: 1em;
     font-weight: normal;
     text-align: center;
@@ -342,7 +335,8 @@ a:visited {
     .contact_content .place .contact_sign {
       color: #005296;
       margin: 10px 0 30px 0;
-      white-space: nowrap; }
+      white-space: nowrap;
+      text-shadow: 1px 1px #9da0a2; }
     .contact_content .place .contact_content {
       font-size: 0.875em;
       font-weight: unset;
@@ -408,5 +402,41 @@ div.section span {
   margin-left: 18px;
   color: white;
   line-height: 23px; }
+
+.row_info {
+  width: 90%;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+
+.info_box {
+  width: 50%; }
+  .info_box .iconG {
+    color: #005296;
+    text-align: center;
+    font-size: 64px;
+    padding-bottom: 15px;
+    padding-top: 20px; }
+  .info_box .icon-clock:before {
+    content: "\e94e"; }
+  .info_box .icon-user-tie:before {
+    content: "\e976"; }
+  .info_box .icon-briefcase:before {
+    content: "\e9ae"; }
+  .info_box .info_title {
+    text-align: center;
+    color: black;
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    font-weight: bold; }
+  .info_box .info_text1 {
+    color: rgba(71, 81, 82, 0.84);
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    line-height: 28px; }
 
 /*# sourceMappingURL=style.css.map */
