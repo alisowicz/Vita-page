@@ -218,19 +218,16 @@ a:visited {
 
 .about_place {
   width: 90%;
-  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
 
-.place_box {
+.place_box, .place_box1 {
   width: 300px;
-  border: 1px solid #e2e1e1;
-  box-shadow: 1px 1px 4px 3px #b2b3b963;
   padding: 10px; }
-  .place_box .circle {
+  .place_box .circle, .place_box1 .circle {
     width: 25px;
     height: 25px;
     border: 7px solid rgba(178, 179, 185, 0.87);
@@ -240,30 +237,30 @@ a:visited {
     left: 50%;
     top: -22px;
     transform: translate(-50%); }
-  .place_box .icon2 {
+  .place_box .icon2, .place_box1 .icon2 {
     color: #005296;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     padding-top: 20px; }
-  .place_box .place_title {
+  .place_box .place_title, .place_box1 .place_title {
     text-align: center;
     color: black;
-    font-size: 1em;
+    font-size: 0.875em;
     margin-bottom: 10px;
     font-weight: bold; }
-  .place_box .place_text1 {
+  .place_box .place_text1, .place_box1 .place_text1 {
     color: rgba(71, 81, 82, 0.84);
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: normal;
     text-align: center;
     line-height: 25px;
     padding-bottom: 15px; }
-  .place_box .icon-room:before {
+  .place_box .icon-room:before, .place_box1 .icon-room:before {
     content: "\e900"; }
-  .place_box .icon-phone:before {
+  .place_box .icon-phone:before, .place_box1 .icon-phone:before {
     content: "\e942"; }
-  .place_box .icon-envelop:before {
+  .place_box .icon-envelop:before, .place_box1 .icon-envelop:before {
     content: "\e945"; }
 
 .offers {
@@ -379,7 +376,7 @@ div.section span {
 
 .container1 {
   width: 90%;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row; }
@@ -452,5 +449,22 @@ div.section span {
 .dropdown_p {
   padding: 20px 20px;
   font-size: 0.875em; }
+
+.about {
+  background-color: rgba(233, 227, 227, 0.73); }
+
+.rectangle {
+  display: flex;
+  flex-direction: row; }
+
+.dino {
+  margin-right: 28px;
+  text-align: left; }
+
+.klus {
+  text-align: left; }
+
+.place_box1 {
+  width: 300px; }
 
 /*# sourceMappingURL=style.css.map */

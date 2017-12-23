@@ -10,6 +10,7 @@
     text-align: center!important;
   }
 
+
   .box6 {
     display: inline!important;
   }
@@ -303,8 +304,6 @@ a:visited {
 
 .about_place {
   width: 90%;
-  // padding: 0 0 180px 0;
-  margin-bottom: 100px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -314,8 +313,6 @@ a:visited {
 
 .place_box {
   width: 300px;
-  border: 1px solid #e2e1e1;
-  box-shadow: 1px 1px 4px 3px #b2b3b963;
   padding: 10px;
 
   .circle {
@@ -334,21 +331,21 @@ a:visited {
     color: $color-logo-blue;
     text-align: center;
     font-size: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     padding-top: 20px;
   }
 
   .place_title {
     text-align: center;
     color: black;
-    font-size: $font-size16;
+    font-size: $font-size14;
     margin-bottom: 10px;
     font-weight: bold;
   }
 
   .place_text1 {
     color: rgba(71, 81, 82, 0.84);
-    font-size: $font-size14;
+    font-size: $font-size12;
     font-weight: normal;
     text-align: center;
     line-height: 25px;
@@ -518,7 +515,7 @@ div.section span {
 
 .container1 {
   width: 90%;
-  margin: 100px auto;
+  margin: 100px auto 0 auto;
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -606,4 +603,22 @@ div.section span {
 .dropdown_p{
   padding: 20px 20px;
   font-size: $font-size14;
+}
+.about{
+  background-color: $color-bg-grey;
+}
+.rectangle{
+  display: flex;
+  flex-direction: row;
+}
+.dino{
+  margin-right: 28px;
+  text-align: left;
+}
+.klus{
+  text-align: left;
+}
+.place_box1{
+  @extend.place_box;
+  width: 300px;
 }
