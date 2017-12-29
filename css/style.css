@@ -281,14 +281,18 @@ a:visited {
     margin-right: auto; }
     .offers .content_offers .box {
       text-align: center;
-      padding-left: 13px;
-      margin-bottom: 30px; }
+      padding: 13px;
+      margin-bottom: 30px;
+      background-color: rgba(210, 198, 187, 0.09); }
       .offers .content_offers .box .icon {
         color: white;
-        text-align: left;
-        font-size: 40px;
-        padding-bottom: 10px;
-        padding-top: 20px; }
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+        height: 57px; }
+        .offers .content_offers .box .icon:hover {
+          color: #005296;
+          transition: all 0.3s ease-out 0s; }
       .offers .content_offers .box .icon-heart:before {
         content: "\e9da"; }
       .offers .content_offers .box .icon-home3:before {
@@ -303,12 +307,13 @@ a:visited {
         color: white;
         font-size: 1.43em;
         margin-bottom: 10px;
+        margin-top: 10px;
         font-weight: bold; }
       .offers .content_offers .box .box-text {
         color: white;
-        font-size: 1em;
+        font-size: 0.875em;
         margin: 0 auto;
-        max-width: 67%;
+        max-width: 38%;
         font-weight: normal;
         line-height: 25px;
         padding-bottom: 15px; }
@@ -376,7 +381,7 @@ div.section span {
 
 .container1 {
   width: 90%;
-  margin: 100px auto 0 auto;
+  margin: 100px auto 0;
   display: flex;
   justify-content: center;
   flex-direction: row; }
@@ -423,7 +428,7 @@ div.section span {
   text-align: center;
   color: black;
   font-size: 1.125em;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
   font-weight: bold; }
 
 .info_text1 {
@@ -447,7 +452,7 @@ div.section span {
     color: rgba(71, 81, 82, 0.84); }
 
 .dropdown_p {
-  padding: 20px 20px;
+  padding: 20px;
   font-size: 0.875em; }
 
 .about {
