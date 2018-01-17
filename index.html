@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/icomoon/style.css">
   <link rel="stylesheet" href="css/icomoon2/style.css">
   <link rel="stylesheet" href="css/icomoon4/style.css">
+  <link rel="Shortcut icon" href="css/images/favicon.ico">
+
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -14,6 +16,26 @@
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <script>
+  //gładkie przewijanie
+
+  $(document).ready(function() {
+
+  	$('a[href^="#"]').on('click', function(event) {
+
+  		var target = $( $(this).attr('href') );
+
+  		if( target.length ) {
+  			event.preventDefault();
+  			$('html, body').animate({
+  				scrollTop: target.offset().top
+  			}, 1000);
+  		}
+  	});
+
+  });
+  //koniec gładkiego przewijania
+  </script>
 
 </head>
 
@@ -26,28 +48,24 @@
       <div class="container-main">
         <div class="nav_container">
           <div class="logo"></div>
-          <div class="menu_box">
-            <div class="nav_box box1">
-              <p><a href="#section about">O FIRMIE</a></p>
-            </div>
-            <div class="nav_box box2">
-              <p>UBEZPIECZENIA</p>
-            </div>
-            <div class="nav_box box3">
-              <p>PARTNERZY</p>
-            </div>
-            <div class="nav_box box4">
-              <p>PRACA</p>
-            </div>
+          <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" href="#section about">O Firmie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#box-title">Oferta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_partners">Partnerzy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">Praca</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about_place">Kontakt</a>
+            </li>
+          </ul>
 
-            <div class="nav_box box5">
-              <p>KONTAKT</p>
-            </div>
-            <div class="nav_box box6">
-              <p>hamburger</p>
-            </div>
-
-          </div>
         </div>
       </div>
     </nav>
@@ -74,7 +92,7 @@
               </svg>
             </div>
             <h2 class="info_title">Doświadczenie</h2>
-            <h3 class="info_text1">Agencja VITA Ubezpieczenia i Finanse funkcjonuje na rynku pośrednictwa ubezpieczeniowego i finansowego od 1994 roku. Dzięki doświadczeniu oraz tysiącom spotkań z Klientami, możemy zaoferować każdą ofertę ubezpieczeniową.</h3>
+            <h3 class="info_text1">Agencja VITA Ubezpieczenia i Finanse funkcjonuje na rynku pośrednictwa ubezpieczeniowego i finansowego od 1994 r. Dzięki doświadczeniu oraz tysiącom spotkań z Klientami, możemy zaoferować każdą ofertę ubezpieczeniową.</h3>
           </div>
           <div class="info_box">
             <div class="info_icon">
@@ -99,7 +117,7 @@
         <div class="content_offers">
           <div class="box">
             <div class="icon icon-heart"></div>
-            <h2 class="box-title">UBEZPIECZENIA NA ŻYCIE</h2>
+            <h2 id="box-title">UBEZPIECZENIA NA ŻYCIE</h2>
             <h3 class="box-text">Zasadniczym celem ubezpieczeń na życie jest zapewnienie ochrony finansowej osobom bliskim, a tym samym zyskanie poczucia bezpieczeństwa</h3>
 
             <div class="dropdown">
@@ -136,7 +154,8 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <p class="dropdown_p"> Gdy słyszymy o nieszczęśliwym wypadku czy nagłej chorobie myślimy: nas to nie dotyczy, nam nie może się to zdarzyć. Na pewno jednak znamy osoby, których życie zmieniło się dramatycznie w jednej chwili. Taka sytuacja może spotkać, niestety,
-                  każdego.<br/><br/>Polecamy pakiet ubezpieczeniowy, dzięki któremu Towarzystwo wypłaci sumę określoną w umowie, w razie nieszczęśliwego wypadku lub choroby.</p>
+                  każdego.
+                  <br/><br/>Polecamy pakiet ubezpieczeniowy, dzięki któremu Towarzystwo wypłaci sumę określoną w umowie, w razie nieszczęśliwego wypadku lub choroby.</p>
               </div>
             </div>
             <div class="dropdown">
@@ -171,7 +190,7 @@
           </div>
           <div class="box">
             <div class="icon icon-home3"></div>
-            <h2 class="box-title">UBEZPIECZENIA MAJĄTKU</h2>
+            <h2 id="box-title">UBEZPIECZENIA MAJĄTKU</h2>
             <h3 class="box-text">Dzięki szerokiej ofercie dwudziestu towarzystw ubezpieczeniowych pozwolimy Ci oszczędzić pieniądze i spokojnie spać.</h3>
 
             <div class="dropdown">
@@ -185,7 +204,7 @@
           </div>
           <div class="box">
             <div class="icon icon-display"></div>
-            <h2 class="box-title">UBEZPIECZENIA DLA FIRM</h2>
+            <h2 id="box-title">UBEZPIECZENIA DLA FIRM</h2>
             <h3 class="box-text">Oferujemy ubezpieczenie na wypadek szkód wynikających z prowadzonej działalności gospodarczej.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia majątku przedsiębiorstw
@@ -209,7 +228,7 @@
         <div class="content_offers">
           <div class="box">
             <div class="icon icon-truck"></div>
-            <h2 class="box-title">UBEZPIECZENIA KOMUNIKACYJNE</h2>
+            <h2 id="box-title">UBEZPIECZENIA KOMUNIKACYJNE</h2>
             <h3 class="box-text">Jesteś kierowcą? Nie pozwól, aby wypadek zachwiał Twoją stabilnością finansową. Dobierzemy ofertę, która zagwarantuje profesjonalną obsługę powypadkową, auto zastępcze oraz fachową naprawę Twojego pojazdu.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia komunikacyjne
@@ -228,7 +247,7 @@
           </div>
           <div class="box">
             <div class="icon icon-airplane"></div>
-            <h2 class="box-title">UBEZPIECZENIA TURYSTYCZNE</h2>
+            <h2 id="box-title">UBEZPIECZENIA TURYSTYCZNE</h2>
             <h3 class="box-text">Często podróżujesz? Chcesz mieć pewność, że w czasie podróży żaden nieprzewidziany wypadek nie pokrzyżuje Ci planów? Ubezpieczenie turystyczne to nie tylko wakacje ale także wyjazdy na staż, praktyki czy wyjazdy służbowe. Bądź spokojny o zwrot kosztów leczenia, ubezpieczenie następstw nieszczęśliwych wypadków (NNW) i odpowiedzialność cywilną (OC) w życiu prywatnym.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia turystyczne
@@ -240,7 +259,7 @@
           </div>
           <div class="box">
             <div class="icon icon-alarm"></div>
-            <h2 class="box-title">UBEZPIECZENIA ZDROWOTNE</h2>
+            <h2 id="box-title">UBEZPIECZENIA ZDROWOTNE</h2>
             <h3 class="box-text">Ubezpieczenia zdrowotne gwarantują szeroki zakres opieki medycznej za niewielką składkę.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia zdrowotne
@@ -265,7 +284,7 @@
 
     <section class="section partners">
       <div class="container-main">
-        <div class="about_partners">
+        <div id="about_partners">
           <h1 class="partners_h1">NASI PARTNERZY<h1>
         <h3 class="partners_h3">Współpracujemy z wiodącymi na rynku Towarzystwami Ubezpieczeniowymi,
                               dzięki temu oferujemy Państwu szeroki wachlarz z produktów OC i AC,
@@ -297,7 +316,7 @@
 
   <section class="section product-life">
     <div class="container1 product_container">
-      <div class="split-job">
+      <div class="split-job" id="work">
         <h1 class="split-job-h1">DOŁĄCZ DO NASZEGO ZESPOŁU</h1>
           <p class="split-left-p">Cenisz sobie stabilność i lubisz podejmować wyzwania?<br/> Dołącz do zespołu VITA Ubezpieczenia i Finanse. <br/> <br/> Oferujemy pracę w zawodzie pośrednika ubezpieczeniowo-finansowego.<br/><br/>
             <b>Korzyści ze współpracy</b><br/><br/>
@@ -317,8 +336,7 @@
 
     <section class="section about">
       <div class="container-main">
-        <div class="circle"></div>
-        <div class="about_place">
+        <div id="about_place">
           <div class="place_box1">
             <div class="icon2 icon-room"></div>
             <h2 class="place_title">ODWIEDŹ NASZE BIURO</h2>
@@ -341,15 +359,24 @@
             <h3 class="place_text1">biuro@vita.poznan.pl</h3><br/>
           </div>
         </div>
+        <div class="bottom-line"></div>
+
       </div>
-
     </section>
-
-
-
-
-
   </section>
+
+<!-- gładkie przewijanie -->
+  <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+    });
+</script>
+<!-- koniec gładkiego przewijania -->
+
 </body>
 
 </html>

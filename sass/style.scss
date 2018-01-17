@@ -5,7 +5,7 @@
     flex-direction: column!important;
   }
 
-  .about_place {
+  #about_place {
     flex-direction: column!important;
     text-align: center!important;
   }
@@ -29,26 +29,19 @@
   margin: 0;
   font-size: $font-size16;
 }
+.justify-content-end {
+  margin: 30px 0px;
+
+}
 
 a:link {
   text-decoration: none;
   color: rgba(71, 81, 82, 0.84);
   position: relative;
-}
-
-a:after {
-  content: '';
-  position: absolute;
-  top: 21px;
-  left: 0;
-  width: 0;
-  border-bottom: 2px solid $color-logo-blue;
-  transition: width 0.4s;
-}
-
-a:hover:after {
-  width: 100%;
-  color: $color-logo-blue !important;
+    &:hover {
+      text-decoration: none;
+      color: rgba(71, 81, 82, 0.84);
+  }
 }
 
 a:visited {
@@ -84,28 +77,12 @@ a:visited {
 .logo {
   background-image: url("images/logo.png");
   width: 180px;
-  height: auto;
+  height: 100px;
   z-index: 10;
   background-size: contain;
   align-items: center;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.menu_box {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-
-  .nav_box {
-    margin-right: 16px;
-
-    p {
-      padding: 30px 0;
-      white-space: nowrap;
-      font-weight: bold;
-    }
-  }
 }
 
 .screen-one {
@@ -125,7 +102,7 @@ a:visited {
   }
 
   .title-main {
-    font-size: 30px;
+    font-size: $font-size30;
     text-align: left;
     text-shadow: 1px 2px #666465;
     font-style: italic;
@@ -142,7 +119,7 @@ a:visited {
   height: calc(100%vh - 40px);
   width: 100%;
 
-  .about_partners {
+  #about_partners {
     margin: 100px auto 10px;
   }
 
@@ -153,7 +130,7 @@ a:visited {
   }
 
   .partners_h3 {
-    font-size: $font-size18;
+    font-size: $font-size19;
     text-align: center;
     line-height: 25px;
     padding: 0 120px;
@@ -280,7 +257,7 @@ a:visited {
 }
 
 .allSplit {
-  font-size: 23px;
+  font-size: $font-size30;
   color: $color-logo-blue;
   font-weight: bold;
   text-shadow: 1px 1px #9da0a2;
@@ -294,35 +271,27 @@ a:visited {
 }
 
 .about_p {
-  font-size: $font-size18;
+  font-size: $font-size19;
   text-align: center;
-  line-height: 25px;
+  line-height: 28px;
   color: rgba(71, 81, 82, 0.84);
 }
 
-.about_place {
-  width: 90%;
+#about_place {
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .place_box {
-  width: 300px;
+  width: 29%;
   padding: 10px;
 
-  .circle {
-    width: 25px;
-    height: 25px;
-    border: 7px solid rgba(178, 179, 185, 0.87);
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    left: 50%;
-    top: -22px;
-    transform: translate(-50%);
+  &:hover {
+    box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-out 0s;
   }
 
   .icon2 {
@@ -336,17 +305,17 @@ a:visited {
   .place_title {
     text-align: center;
     color: black;
-    font-size: $font-size14;
+    font-size: $font-size19;
     margin-bottom: 10px;
     font-weight: bold;
   }
 
   .place_text1 {
     color: rgba(71, 81, 82, 0.84);
-    font-size: $font-size12;
+    font-size: $font-size19;
     font-weight: normal;
     text-align: center;
-    line-height: 25px;
+    line-height: 30px;
     padding-bottom: 15px;
   }
 
@@ -387,17 +356,17 @@ a:visited {
       margin-bottom: 30px;
       background-color: rgba(210, 198, 187, 0.09);
 
-
       .icon {
         color: white;
         width: 100%;
         text-align: center;
         font-size: 50px;
         height: 57px;
-          &:hover {
-            color: $color-logo-blue;
-            transition: all 0.3s ease-out 0s;
-          }
+
+        &:hover {
+          color: $color-logo-blue;
+          transition: all 0.3s ease-out 0s;
+        }
       }
 
       .icon-heart:before {
@@ -420,20 +389,19 @@ a:visited {
         content: "\e950";
       }
 
-      .box-title {
+      #box-title {
         color: white;
-        font-size: $font-size23;
+        font-size: $font-size28;
         margin-bottom: 10px;
         margin-top: 10px;
         font-weight: bold;
-
       }
 
       .box-text {
         color: white;
-        font-size: $font-size14;
+        font-size: $font-size16;
         margin: 0 auto;
-        max-width: 38%;
+        max-width: 100%;
         font-weight: normal;
         line-height: 25px;
         padding-bottom: 15px;
@@ -534,7 +502,7 @@ div.section span {
   color: white !important;
 
   h1 {
-    font-size: 23px;
+    font-size: $font-size19;
     color: white;
     font-weight: bold;
     margin-bottom: 30px;
@@ -542,13 +510,15 @@ div.section span {
 
   .split-left-p {
     color: white;
+    font-size: $font-size18;
   }
 }
 
 #list {
   margin-left: 18px;
   color: white !important;
-  line-height: 23px;
+  line-height: 27px;
+  font-size: $font-size19;
 }
 
 .row_info {
@@ -585,7 +555,7 @@ div.section span {
 
 .info_text1 {
   color: rgba(71, 81, 82, 0.84);
-  font-size: $font-size16;
+  font-size: $font-size19;
   font-weight: normal;
   text-align: center;
   line-height: 28px;
@@ -600,7 +570,8 @@ div.section span {
 #dropdownMenuButton {
   background-color: transparent;
   color: white;
-  max-width: 33%;
+  max-width: 100%;
+  font-size: $font-size23;
 
   &:hover {
     background-color: white;
@@ -610,11 +581,12 @@ div.section span {
 
 .dropdown_p {
   padding: 20px;
-  font-size: $font-size14;
+  font-size: $font-size16;
 }
 
 .about {
   background-color: $color-bg-grey;
+  padding: 20px 0;
 }
 
 .rectangle {
@@ -625,13 +597,23 @@ div.section span {
 .dino {
   margin-right: 28px;
   text-align: left;
+  font-size: $font-size18;
+  line-height: 30px;
 }
 
 .klus {
   text-align: left;
+  font-size: $font-size19;
+  line-height: 30px;
 }
 
 .place_box1 {
   @extend.place_box;
-  width: 300px;
+  width: 42%;
+
+  &:hover {
+    box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-out 0s;
+    border-radius: 3px;
+  }
 }
