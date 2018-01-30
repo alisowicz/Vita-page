@@ -36,14 +36,32 @@
   });
   //koniec gładkiego przewijania
   </script>
+  <script>
+  //zaczyna sie to top
 
+  $(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+    $("#toTop").click(function () {
+       //1 second of animation time
+       //html works for FFX but not Chrome
+       //body works for Chrome but not FFX
+       //This strange selector seems to work universally
+       $("html, body").animate({scrollTop: 0}, 1000);
+    });
+  </script>
+  <!-- //konczy się to top -->
 </head>
 
 <body>
 
 
   <section class="main-page">
-
+<div id='toTop'>do góry</div>
     <nav class="section navigation">
       <div class="container-main">
         <div class="nav_container">
@@ -363,19 +381,19 @@
 
       </div>
     </section>
+    <!-- konie section about -->
+
   </section>
 
 <!-- gładkie przewijanie -->
-  <script src="bower_components/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-<script>
-    $(document).ready(function() {
 
-    });
-</script>
-<!-- koniec gładkiego przewijania -->
+
+
+
+
 
 </body>
 

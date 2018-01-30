@@ -203,7 +203,9 @@ a:visited {
   margin-right: auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.75);
+  transition: all 0.3s ease-out 0s; }
 
 .place_box, .place_box1 {
   width: 29%;
@@ -457,5 +459,16 @@ div.section span {
     box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.75);
     transition: all 0.3s ease-out 0s;
     border-radius: 3px; }
+
+#toTop {
+  padding: 5px 3px;
+  background: #0f5fb1;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  display: none;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=style.css.map */
