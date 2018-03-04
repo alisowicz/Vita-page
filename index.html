@@ -4,8 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>VITA Ubezpieczenia i Finanse</title>
+  <!-- <a href='https://pl.freepik.com/darmowe-zdjecie/szczęśliwa-rodzina-z-książką_859509.htm'>Designed by Freepik</a> -->
+  <!-- <a href='https://pl.freepik.com/darmowe-zdjecie/obniżone-rodzina-odpoczynku_857614.htm'>Designed by Freepik</a> -->
   <link rel="stylesheet" href="css/icomoon/style.css">
+  <link rel="stylesheet" href="css/icomoon1/style.css">
   <link rel="stylesheet" href="css/icomoon2/style.css">
+  <link rel="stylesheet" href="css/icomoon3/style.css">
   <link rel="stylesheet" href="css/icomoon4/style.css">
   <link rel="Shortcut icon" href="css/images/favicon.ico">
 
@@ -17,51 +21,32 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script>
-  //gładkie przewijanie
+    //gładkie przewijanie
 
-  $(document).ready(function() {
+    $(document).ready(function() {
 
-  	$('a[href^="#"]').on('click', function(event) {
+      $('a[href^="#"]').on('click', function(event) {
 
-  		var target = $( $(this).attr('href') );
+        var target = $($(this).attr('href'));
 
-  		if( target.length ) {
-  			event.preventDefault();
-  			$('html, body').animate({
-  				scrollTop: target.offset().top
-  			}, 1000);
-  		}
-  	});
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
 
-  });
-  //koniec gładkiego przewijania
-  </script>
-  <script>
-  //zaczyna sie to top
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#toTop').fadeIn();
-    } else {
-        $('#toTop').fadeOut();
-    }
-});
-    $("#toTop").click(function () {
-       //1 second of animation time
-       //html works for FFX but not Chrome
-       //body works for Chrome but not FFX
-       //This strange selector seems to work universally
-       $("html, body").animate({scrollTop: 0}, 1000);
     });
+    //koniec gładkiego przewijania
   </script>
-  <!-- //konczy się to top -->
+
 </head>
 
 <body>
 
 
   <section class="main-page">
-<div id='toTop'>do góry</div>
     <nav class="section navigation">
       <div class="container-main">
         <div class="nav_container">
@@ -121,13 +106,13 @@
 
             </div>
             <h2 class="info_title">Przedstawiciele</h2>
-            <h3 class="info_text1">Dla naszych Klientów pracuje 24 wyszkolonych, doświadczonych przedstawicieli. Godziny spędzone na szkoleniach sprawiają, że bez przerwy rozwijają swoje umiejętności oraz podnoszą kwalifikacje zawodowe.
-</h3><br/>
+            <h3 class="info_text1">Dla naszych Klientów pracuje 24 wyszkolonych, doświadczonych przedstawicieli. Godziny spędzone na szkoleniach sprawiają, że bez przerwy rozwijają swoje umiejętności oraz podnoszą kwalifikacje zawodowe.</h3><br/>
           </div>
 
         </div>
 
       </div>
+
     </section>
 
     <section class="section offers">
@@ -181,9 +166,10 @@
             Polisy kapitałowe
           </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Naszym Klientom oferujemy:<br/><br/>Dostęp do kompleksowych prywatnych usług medycznych na najwyższym poziomie<br/><br/> Polisę świadczenia szpitalnego gwarantującą wypłatę ustalonego świadczenia za każdy dzień spędzony w klinice lub szpitalu.
-                  W większości przypadków produkt ten można rozbudować o dodatkowe świadczenie pooperacyjne.<br/><br/>Polisę rekompensującą koszty leczenia w szpitalu.<br/><br/>Świadczenie z tytułu tego ubezpieczenia może stanowić wsparcie finansowe ułatwiające
-                  powrót do pełnego zdrowia, rekompensatę utraconych w związku z hospitalizacją dochodów, zwrot przynajmniej części wydatków poniesionych na leczenie w szpitalu.</p>
+                <p class="dropdown_p">Korzyści z prowadzenia inwestycji w fundusze kapitałowe w formie polisy ubezpieczeniowej: <br/><br/>- dostęp do wyselekcjonowanych funduszy o różnym stopniu ryzyka inwestycyjnego<br/>- możliwość dowolnej ilości zmian portfela funduszy<br/>-
+                  brak opłat za zmianę funduszy - jedna cena transakcyjna<br/>- możliwość stałego dostępu do inwestycji przez internet<br/>- podatek Belki jest reinwestowany i pobierany dopiero w momencie wypłaty pieniędzy z polisy<br/>- w momencie śmierci
+                  ubezpieczonego pieniądze są wypłacane jako świadczenie wskazanej osobie<br/>- możliwa częściowa wypłata zgromadzonego kapitału w trakcie umowy<br/>- możliwość cesji na inną osobę lub instytucję bez obowiązku zapłaty podatku od spadków
+                  i darowizn przy zmianie ubezpieczającego tj. osoby dysponującej środkami<br/>- wyłączenie z egzekucji sądowe.</p>
               </div>
             </div>
             <div class="dropdown">
@@ -200,9 +186,9 @@
             Gwarantowana renta kapitałowa
           </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Umowa Gwarantowana Renta Kapitałowa polega na zobowiązaniu się Towarzystwa do regularnych wypłat dożywotniego lub okresowego świadczenia rentowego w wysokości i terminach określonych w umowie ubezpieczenia. Umowa gwarantuje:<br/><br/>bezpieczne
-                  i rzetelne zarządzanie powierzonymi środkami pieniężnymi,niezależność i wygodę oraz utrzymanie standardu życia regularne wypłaty świadczeń rentowych bez ryzyka wyczerpania się kapitału( w rencie dożywotnej) jako uzupełnienie świadczeń
-                  emerytalnych otrzymywanych z I i II filaru </p>
+                <p class="dropdown_p"> Umowa Gwarantowana Renta Kapitałowa polega na zobowiązaniu się Towarzystwa do regularnych wypłat dożywotniego lub okresowego świadczenia rentowego w wysokości i terminach określonych w umowie ubezpieczenia. Umowa gwarantuje:<br/><br/>-
+                  bezpieczne i rzetelne zarządzanie powierzonymi środkami pieniężnymi<br/>- niezależność i wygodę oraz utrzymanie standardu życia<br/>- regularne wypłaty świadczeń rentowych bez ryzyka wyczerpania się kapitału( w rencie dożywotnej) jako
+                  uzupełnienie świadczeń emerytalnych otrzymywanych z I i II filaru </p>
               </div>
             </div>
           </div>
@@ -215,7 +201,8 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia domów i mieszkań
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
+                <p class="dropdown_p"> UBEZPIECZENIA MIENIA: <br/><br/> - stałe elementy od ognia i innych zdarzeń losowych<br/> - mienie ruchome od ognia i innych zdarzeń losowych<br/> - mienie ruchome i stałe od kradzieży z włamaniem, rabunku i aktów wandalizmu<br/> - ubezpieczenie
+                  budowli od ognia i innych zdarzeń losowych (altany, ogrodzenie, garaże itp.)<br/><br/> NASTĘPSTWA NIESZCZĘŚLIWEGO WYPADKU:<br/><br/> - trwały uszczerbek na zdrowiu<br/> - śmierć wskutek NNW.<br/><br/> ODPOWIEDZIALNOŚC CYWILNA:<br/><br/>                  - z tytułu posiadania i użytkowania mieszkania lub domu<br/> - z tytułu czynności życia codziennego.</p>
               </div>
             </div>
 
@@ -228,7 +215,10 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia majątku przedsiębiorstw
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
+                <p class="dropdown_p"> UBEZPIECZENIA MAJĄTKOWE<br/><br/> - Ubezpieczenie wszystkich ryzyk utraty lub uszkodzenia mienia<br/> - Ubezpieczenie procesu inwestycyjnego<br/> - Ubezpieczenie ryzyk budowy<br/> - Ubezpieczenie ryzyk montażu<br/><br/> UBEZPIECZENIA ODPOWIEDZIALNOŚCI
+                  CYWILNEJ<br/><br/> - Ubezpieczenie odpowiedzialności cywilnej pracodawcy<br/> - Ubezpieczenie odpowiedzialności cywilnej członków zarządu i rad nadzorczych<br/> - Ubezpieczenie odpowiedzialności cywilnej za produkt<br/> - Obowiązkowe
+                  ubezpieczenia odpowiedzialności cywilnej grup zawodowych.<br/> - Dobrowolne ubezpieczenie odpowiedzialności cywilnej grup zawodowych.<br/> - Odpowiedzialność cywilna osób fizycznych w życiu prywatnym<br/><br/> UBEZPIECZENIA FINANSOWE<br/><br/>                  UBEZPIECZENIA TRANSPORTOWE<br/><br/> - Ubezpieczenie mienia w transporcie krajowym CARGO<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu krajowym<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu międzynarodowym<br/> - Ubezpieczenie
+                  OC spedytora</p>
               </div>
             </div>
             <div class="dropdown">
@@ -252,16 +242,15 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia komunikacyjne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
+                <p class="dropdown_p"> Na naszą kompleksową ofertę składają się m.in <br/><br/> - OC - ubezpieczenie odpowiedzialności cywilnej Obowiązkowe ubezpieczenie komunikacyjne dla wszystkich posiadaczy pojazdów mechanicznych, obejmujące swoim. zakres ochrony szkody
+                  wyrządzone osobom trzecim w związku z ruchem tych pojazdów.<br/><br/> - AC - ubezpieczenie Autocasco Ubezpieczenie to zapewnia finansową rekompensatę w przypadku uszkodzenia, zniszczenia albo utraty ubezpieczonego pojazdu i jego wyposażenia.
+                  Szeroki zakres ochrony obejmujący wszelkie ryzyka (formuła „all risk”), możliwość wyboru zakresu ubezpieczenia zależnie od indywidualnych potrzeb<br/><br/> - Ubezpieczenie szyb - ubezpieczenie to zapewnia pokrycie kosztów naprawy lub
+                  wymiany szyb w Twoim pojeździe w przypadku ich uszkodzenia (np. na skutek wandalizmu). Powstałe zdarzenie, objęte tą ochroną ubezpieczeniową nie spowoduje utraty zniżek za bezszkodowy przebieg ubezpieczenia AC.<br/><br/> - Ubezpieczenie
+                  NNW kierowcy i pasazerów - to ubezpieczenie komunikacyjne chroniące Ciebie i osoby znajdujące się z Tobą w pojeździe.<br/><br/> - Assistance - to atrakcyjna propozycja dla osób, które wykupiły ubezpieczenia komunikacyjne AC lub OC. Pozwala
+                  ona na uzyskanie szybkiej i profesjonalnej pomocy w awaryjnych sytuacjach na drodze.</p>
               </div>
             </div>
-            <div class="dropdown">
-              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ochrona prawna kierowcy i pojazdu
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
-              </div>
-            </div>
+
           </div>
           <div class="box">
             <div class="icon icon-airplane"></div>
@@ -271,7 +260,11 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia turystyczne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
+                <p class="dropdown_p"> - ubezpieczenie kosztów leczenia – pokrycie kosztów leczenia lub zwrot poniesionych wydatków w związku z nagłym zachorowaniem lub nieszczęśliwym wypadkiem<br/><br/> - assistance – pakiet świadczeń, w ramach których towarzystwo sfinansuje
+                  i zorganizuje pomoc polegającą na m.in. uzyskaniu informacji dotyczących kraju będącego celem podróży, transporcie poszkodowanego z miejsca wypadku lub nagłego zachorowania do placówki medycznej, pomocy w przypadku wcześniejszego powrotu
+                  do kraju. Towarzystwo pokryje również koszty poszukiwań i ratownictwa w przypadku zaginięcia oraz pomocy prawnej<br/><br/> - ubezpieczenie następstw nieszczęśliwych wypadków (NNW) – zapewnia wypłatę świadczenia w przypadku odniesienia
+                  trwałego uszczerbku na zdrowiu lub śmierci na skutek nieszczęśliwego wypadku<br/><br/> - ubezpieczenie bagażu – wypłata odszkodowania w przypadku uszkodzenia, zniszczenia lub kradzieży bagażu<br/><br/> - ubezpieczenie odpowiedzialności
+                  cywilnej w życiu prywatnym za szkody wyrządzone osobom trzecim podczas zagranicznego wyjazdu </p>
               </div>
             </div>
           </div>
@@ -283,16 +276,44 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia zdrowotne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p">Naszym Klientom oferujemy:<br/><br/>Dostęp do kompleksowych prywatnych usług medycznych na najwyższym poziomie<br/><br/> Polisę świadczenia szpitalnego gwarantującą wypłatę ustalonego świadczenia za każdy dzień spędzony w klinice lub szpitalu.
-                  W większości przypadków produkt ten można rozbudować o dodatkowe świadczenie pooperacyjne.<br/><br/>Polisę rekompensującą koszty leczenia w szpitalu.<br/><br/>Świadczenie z tytułu tego ubezpieczenia może stanowić wsparcie finansowe ułatwiające
-                  powrót do pełnego zdrowia, rekompensatę utraconych w związku z hospitalizacją dochodów, zwrot przynajmniej części wydatków poniesionych na leczenie w szpitalu.</p>
+                <p class="dropdown_p">Naszym Klientom oferujemy:<br/><br/>- Dostęp do kompleksowych prywatnych usług medycznych na najwyższym poziomie<br/><br/> - Polisę świadczenia szpitalnego gwarantującą wypłatę ustalonego świadczenia za każdy dzień spędzony w klinice lub
+                  szpitalu. W większości przypadków produkt ten można rozbudować o dodatkowe świadczenie pooperacyjne.<br/><br/>- Polisę rekompensującą koszty leczenia w szpitalu.<br/><br/>Świadczenie z tytułu tego ubezpieczenia może stanowić wsparcie
+                  finansowe ułatwiające powrót do pełnego zdrowia, rekompensatę utraconych w związku z hospitalizacją dochodów, zwrot przynajmniej części wydatków poniesionych na leczenie w szpitalu.</p>
               </div>
             </div>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pakiety medyczne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit quia quam quaerat nesciunt omnis. Dolorum reiciendis natus hic dolorem vel, asperiores expedita cum error</p>
+                <p class="dropdown_p"> Korzyści płynące z posiadania pakietu prywatnej opieki medycznej : <br/><br/> - Elastyczność w wyborze odpowiedniego pakietu w ramach indywidualnych potrzeb<br/> - Oszczędność czasu – krótki czas oczekiwania na wizytę, brak kolejek<br/>                  - Dostęp do lekarza w dowolnym miejscu w Polsce bez zbędnych procedur i formalności<br/> - Oszczędność pieniędzy<br/> - Prestiż wynikający z posiadania prywatnej opieki medycznej<br/> - Wyższa jakość życia, bezpieczeństwo oraz wygoda<br/>                  - Punktualne wizyty<br/>  - Indywidualne podejście do pacjenta<br/> - Gwarancja wysokiej jakości usług i kompleksowej opieki lekarskiej<br/> - Nielimitowany dostęp do lekarzy
+                  specjalistów bez skierowania od lekarza prowadzącego<br/> - Wysoce wykwalifikowany personel medyczny<br/> - Szybka i skuteczna rejestracja telefoniczna<br/> - Nowocześnie wyposażone placówki na terenie całej Polski<br/> - Telefoniczna
+                  obsługa pacjenta czynna 24 godz.</p>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon icon-justice"></div>
+
+            <h2 id="box-title">OCHRONA PRAWNA</h2>
+            <h3 class="box-text">Ochrona prawna</h3>
+            <div class="dropdown">
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ochrona prawna kierowcy i pojazdu
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown_p"> Ochrona prawna obejmuje swym zakresem Europę oraz wszystkie państwa leżące w basenie Morza Śródziemnego. <br/><br/> Kogo chroni ubezpieczenie?<br/><br/> - Właścicieli i kierowców pojazdu, którego dotyczy umowa.<br/> - Wszystkie osoby przewożone
+                  w pojeździe zgodnie z przepisami.<br/> - Wszystkie osoby upoważnione do kierowania pojazdem.<br/><br/> Ubezpieczenie zapewnia ubezpieczonym ochronę prawną w sytuacjach związanych z posiadaniem i użytkowaniem pojazdu gdy:<br/><br/> -
+                  Dochodzisz swoich praw do odszkodowania (np. odszkodowanie za okaleczenie, koszty naprawy samochodu, utratę zarobku).<br/> Wszczęto przeciwko Tobie postępowanie z powodu podejrzenia o popełnienie wykroczenia czy przestępstwa, np. spowodowanie
+                  wypadku drogowego.<br/> Dojdzie do zatrzymania prawa jazdy, dowodu rejestracyjnego lub odebrania uprawnień do kierowania pojazdami.<br/> Ze strony ubezpieczycieli dojdzie do naruszenia umowy ubezpieczenia, np. przeciągania procesu likwidacji
+                  szkody i wypłaty odszkodowania, nieuzasadnionego obniżenia kwoty odszkodowania lub odmowy prawa do odszkodowania.<br/> Dojdzie do naruszenia umowy, np. umowy kupna-sprzedaży, leasingu lub dotyczącej naprawy pojazdu.</p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">II produkt
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown_p"> Korzyści płynące z posiadania pakietu prywatnej opieki medycznej : <br/><br/> - Elastyczność w wyborze odpowiedniego pakietu w ramach indywidualnych potrzeb<br/> - Oszczędność czasu – krótki czas oczekiwania na wizytę, brak kolejek<br/>                  - Dostęp do lekarza w dowolnym miejscu w Polsce bez zbędnych procedur i formalności<br/> - Oszczędność pieniędzy<br/> - Prestiż wynikający z posiadania prywatnej opieki medycznej<br/> - Wyższa jakość życia, bezpieczeństwo oraz wygoda<br/>                  - Punktualne wizyty<br/> - Możliwość posiadania pakietu medycznego za 1 zł.<br/> - Indywidualne podejście do pacjenta<br/> - Gwarancja wysokiej jakości usług i kompleksowej opieki<br/> lekarskiej<br/> - Nielimitowany dostęp do lekarzy
+                  specjalistów bez skierowania od lekarza prowadzącego<br/> - Wysoce wykwalifikowany personel medyczny<br/> - Szybka i skuteczna rejestracja telefoniczna<br/> - Nowocześnie wyposażone placówki na terenie całej Polski<br/> - Telefoniczna
+                  obsługa pacjenta czynna 24 godz.</p>
               </div>
             </div>
           </div>
@@ -316,7 +337,6 @@
         <div class="partner_box partner_6"></div>
         <div class="partner_box partner_7"></div>
         <div class="partner_box partner_8"></div>
-        <div class="partner_box partner_9"></div>
       </div>
       <div class="container both partners_container">
         <div class="partner_box partner_10"></div>
@@ -337,7 +357,7 @@
       <div class="split-job" id="work">
         <h1 class="split-job-h1">DOŁĄCZ DO NASZEGO ZESPOŁU</h1>
           <p class="split-left-p">Cenisz sobie stabilność i lubisz podejmować wyzwania?<br/> Dołącz do zespołu VITA Ubezpieczenia i Finanse. <br/> <br/> Oferujemy pracę w zawodzie pośrednika ubezpieczeniowo-finansowego.<br/><br/>
-            <b>Korzyści ze współpracy</b><br/><br/>
+            <b>Korzyści ze współpracy:</b><br/>
             <ul id="list">
               <li>stabilne warunki współpracy</li>
               <li>system szkoleń i wsparcie zespołu</li>
@@ -358,18 +378,14 @@
           <div class="place_box1">
             <div class="icon2 icon-room"></div>
             <h2 class="place_title">ODWIEDŹ NASZE BIURO</h2>
-            <div class="place_text1">
-              <div class="rectangle">
-                <div class="dino">Siedziba:</b><br/>ul. Wierzbięcice 17/4<br/>61-561 Poznań<br/></div>
-
-                <div class="klus">Oddział:</b><br/>Al. Krasińskiego 13<br/>64-100 Leszno<br/></div>
-              </div>
-            </div>
+            <h3 class="place_text1">Poznań (siedziba)<br/>ul. Wierzbięcice 17 lok.4<br/>61-561 Poznań</h3>
+            <h3 class="place_text1">Leszno (oddział)<br/>Al. Krasińskiego 13<br/>64-100 Leszno</h3><br/>
           </div>
           <div class="place_box">
             <div class="icon2 icon-phone"></div>
             <h2 class="place_title">ZADZWOŃ DO NAS</h2>
-            <h3 class="place_text1">Tel. 61 835 25 05<br/>Fax 61 835 25 08</h3><br/>
+            <h3 class="place_text1">Poznań<br/>+48 61 835 25 05<br/>+48 604 412 149</h3>
+            <h3 class="place_text1">Leszno<br/>+48 65 529 96 48<br/>+48 606 452 271</h3><br/>
           </div>
           <div class="place_box">
             <div class="icon2 icon-envelop"></div>
@@ -385,7 +401,7 @@
 
   </section>
 
-<!-- gładkie przewijanie -->
+  <!-- gładkie przewijanie -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
