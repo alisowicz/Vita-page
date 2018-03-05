@@ -24,11 +24,8 @@
     //gładkie przewijanie
 
     $(document).ready(function() {
-
       $('a[href^="#"]').on('click', function(event) {
-
         var target = $($(this).attr('href'));
-
         if (target.length) {
           event.preventDefault();
           $('html, body').animate({
@@ -36,15 +33,12 @@
           }, 1000);
         }
       });
-
     });
     //koniec gładkiego przewijania
   </script>
-
 </head>
 
 <body>
-
 
   <section class="main-page">
     <nav class="section navigation">
@@ -68,23 +62,20 @@
               <a class="nav-link" href="#about_place">Kontakt</a>
             </li>
           </ul>
-
         </div>
       </div>
     </nav>
     <section class="screen screen-one">
       <div class="screen-background"></div>
-      <h2 class="title-main">Nie mamy wpływu na każde wydarzenie. <br/>Ale decydujesz o tym, jak ono wpłynie na Ciebie... </h2>
+      <h2 class="title-main">Twoja przyszłość...<br>
+        zależy od Ciebie.<br>Zadbaj o nią !</h2>
     </section>
-
-
 
     <section id="section about">
       <div class="container-main">
         <div class="about_content">
-          <h1 class="about_h1 allSplit">WITAMY W AGENCJI UBEZPIECZENIOWEJ VITA</h1>
-          <p class="about_p">Od 1994 r. zajmujemy się obsługą Klientów indywidualnych, firm i przedsiębiorstw na terenie Poznania i okolic. Zapewniamy Klientom kompleksową ofertę i obsługę polis ubezpieczeniowych w zakresie indywidualnym i przedsiębiorstw. Prowadzimy także
-            doradztwo w tematach funduszy inwestycyjnych. </p>
+          <h1 class="about_h1 allSplit">WITAMY W VITA UBEZPIECZENIA I FINANSE</h1>
+          <p class="about_p">Funkcjonujemy na rynku pośrednictwa ubezpieczeniowego i finansowego od 1994 roku.Współpracujemy z liczącymi się instytucjami ubezpieczeniowymi i finansowymi. </p>
         </div>
         <div class="row_info">
           <div class="info_box">
@@ -95,7 +86,7 @@
               </svg>
             </div>
             <h2 class="info_title">Doświadczenie</h2>
-            <h3 class="info_text1">Agencja VITA Ubezpieczenia i Finanse funkcjonuje na rynku pośrednictwa ubezpieczeniowego i finansowego od 1994 r. Dzięki doświadczeniu oraz tysiącom spotkań z Klientami, możemy zaoferować każdą ofertę ubezpieczeniową.</h3>
+            <h3 class="info_text1">Dzięki doświadczeniu i wiedzy zdobytej na setkach szkoleń oraz tysiącom spotkań z Klientami, możemy przygotować  ofertę optymalnego rozwiązania ubezpieczeniowego i finansowego dla każdego klienta.Zajmujemy się obsługą zarówno klientów indywidulanych jak i instytucjonalnych.</h3>
           </div>
           <div class="info_box">
             <div class="info_icon">
@@ -106,7 +97,7 @@
 
             </div>
             <h2 class="info_title">Przedstawiciele</h2>
-            <h3 class="info_text1">Dla naszych Klientów pracuje 24 wyszkolonych, doświadczonych przedstawicieli. Godziny spędzone na szkoleniach sprawiają, że bez przerwy rozwijają swoje umiejętności oraz podnoszą kwalifikacje zawodowe.</h3><br/>
+            <h3 class="info_text1">Dla naszych Klientów pracuje 24 wyszkolonych i doświadczonych przedstawicieli. Potwierdzeniem ich wiedzy i umiejętności jest zadowolenie  klientów, których obsługujemy.</h3><br/>
           </div>
 
         </div>
@@ -121,7 +112,7 @@
           <div class="box">
             <div class="icon icon-heart"></div>
             <h2 id="box-title">UBEZPIECZENIA NA ŻYCIE</h2>
-            <h3 class="box-text">Zasadniczym celem ubezpieczeń na życie jest zapewnienie ochrony finansowej osobom bliskim, a tym samym zyskanie poczucia bezpieczeństwa</h3>
+            <!-- <h3 class="box-text">Zasadniczym celem ubezpieczeń na życie jest zapewnienie ochrony finansowej osobom bliskim, a tym samym zyskanie poczucia bezpieczeństwa</h3> -->
 
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Indywidualne ubezpieczenia na życie</button>
@@ -143,7 +134,7 @@
             </div>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Indywidualne konta emerytalne IKE
+            Indywidualne konta emerytalne IKE i IKZE
           </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <p class="dropdown_p">Indywidualne Konto Emerytalne (IKE)<br/><br/>to oferta przygotowana w związku z wejściem w życie 1 września 2004 roku Ustawy o Indywidualnych Kontach Emerytalnych. Indywidualne Konta Emerytalne są objęte zwolnieniem podatkowym od zysków
@@ -166,18 +157,18 @@
             Polisy kapitałowe
           </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p">Korzyści z prowadzenia inwestycji w fundusze kapitałowe w formie polisy ubezpieczeniowej: <br/><br/>- dostęp do wyselekcjonowanych funduszy o różnym stopniu ryzyka inwestycyjnego<br/>- możliwość dowolnej ilości zmian portfela funduszy<br/>-
+                <p class="dropdown_p">Korzyści z prowadzenia inwestycji w fundusze kapitałowe w formie polisy ubezpieczeniowej:<br/><br/>- dostęp do wyselekcjonowanych funduszy o różnym stopniu ryzyka inwestycyjnego<br/>- możliwość dowolnej ilości zmian portfela funduszy<br/>-
                   brak opłat za zmianę funduszy - jedna cena transakcyjna<br/>- możliwość stałego dostępu do inwestycji przez internet<br/>- podatek Belki jest reinwestowany i pobierany dopiero w momencie wypłaty pieniędzy z polisy<br/>- w momencie śmierci
                   ubezpieczonego pieniądze są wypłacane jako świadczenie wskazanej osobie<br/>- możliwa częściowa wypłata zgromadzonego kapitału w trakcie umowy<br/>- możliwość cesji na inną osobę lub instytucję bez obowiązku zapłaty podatku od spadków
-                  i darowizn przy zmianie ubezpieczającego tj. osoby dysponującej środkami<br/>- wyłączenie z egzekucji sądowe.</p>
+                  i darowizn przy zmianie ubezpieczającego tj. osoby dysponującej środkami</p>
               </div>
             </div>
             <div class="dropdown">
               <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Fundusze inwestycyjne TFI
+            Fundusze Inwestycyjne
           </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Celem działania Towarzystw Funduszy Inwestycyjnych (TFI) jest pomnażanie pieniędzy osób, które wpłaciły do nich swoje oszczędności. Fundusze wymyślono właśnie po to, aby - wykorzystując wiedzę specjalistów - korzystnie obracać kapitałami
+                <p class="dropdown_p"> Celem działania Towarzystw Funduszy Inwestycyjnych jest pomnażanie pieniędzy osób, które wpłaciły do nich swoje oszczędności. Fundusze wymyślono właśnie po to, aby - wykorzystując wiedzę specjalistów - korzystnie obracać kapitałami
                   tych, którzy nie mają wiedzy ani czasu na samodzielne inwestowanie. </p>
               </div>
             </div>
@@ -195,7 +186,7 @@
           <div class="box">
             <div class="icon icon-home3"></div>
             <h2 id="box-title">UBEZPIECZENIA MAJĄTKU</h2>
-            <h3 class="box-text">Dzięki szerokiej ofercie dwudziestu towarzystw ubezpieczeniowych pozwolimy Ci oszczędzić pieniądze i spokojnie spać.</h3>
+            <!-- <h3 class="box-text">Dzięki szerokiej ofercie dwudziestu towarzystw ubezpieczeniowych pozwolimy Ci oszczędzić pieniądze i spokojnie spać.</h3> -->
 
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia domów i mieszkań
@@ -210,15 +201,15 @@
           <div class="box">
             <div class="icon icon-display"></div>
             <h2 id="box-title">UBEZPIECZENIA DLA FIRM</h2>
-            <h3 class="box-text">Oferujemy ubezpieczenie na wypadek szkód wynikających z prowadzonej działalności gospodarczej.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia majątku przedsiębiorstw
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> UBEZPIECZENIA MAJĄTKOWE<br/><br/> - Ubezpieczenie wszystkich ryzyk utraty lub uszkodzenia mienia<br/> - Ubezpieczenie procesu inwestycyjnego<br/> - Ubezpieczenie ryzyk budowy<br/> - Ubezpieczenie ryzyk montażu<br/><br/> UBEZPIECZENIA ODPOWIEDZIALNOŚCI
-                  CYWILNEJ<br/><br/> - Ubezpieczenie odpowiedzialności cywilnej pracodawcy<br/> - Ubezpieczenie odpowiedzialności cywilnej członków zarządu i rad nadzorczych<br/> - Ubezpieczenie odpowiedzialności cywilnej za produkt<br/> - Obowiązkowe
-                  ubezpieczenia odpowiedzialności cywilnej grup zawodowych.<br/> - Dobrowolne ubezpieczenie odpowiedzialności cywilnej grup zawodowych.<br/> - Odpowiedzialność cywilna osób fizycznych w życiu prywatnym<br/><br/> UBEZPIECZENIA FINANSOWE<br/><br/>                  UBEZPIECZENIA TRANSPORTOWE<br/><br/> - Ubezpieczenie mienia w transporcie krajowym CARGO<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu krajowym<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu międzynarodowym<br/> - Ubezpieczenie
-                  OC spedytora</p>
+                <p class="dropdown_p"> UBEZPIECZENIA MAJĄTKU<br/><br/> - Ubezpieczenie wszystkich ryzyk utraty lub uszkodzenia mienia<br/> - Ubezpieczenie procesu inwestycyjnego<br/> - Ubezpieczenie ryzyk budowy<br/> - Ubezpieczenie ryzyk montażu<br/><br/> UBEZPIECZENIA ODPOWIEDZIALNOŚCI
+                  CYWILNEJ
+                  <br/><br/> - Ubezpieczenie odpowiedzialności cywilnej pracodawcy<br/> - Ubezpieczenie odpowiedzialności cywilnej członków zarządu i rad nadzorczych<br/> - Ubezpieczenie odpowiedzialności cywilnej za produkt<br/> - Obowiązkowe ubezpieczenia
+                  odpowiedzialności cywilnej grup zawodowych.<br/> - Dobrowolne ubezpieczenie odpowiedzialności cywilnej grup zawodowych.<br/> - Odpowiedzialność cywilna osób fizycznych w życiu prywatnym<br/><br/> UBEZPIECZENIA FINANSOWE<br/><br/> UBEZPIECZENIA
+                  TRANSPORTOWE<br/><br/> - Ubezpieczenie mienia w transporcie krajowym CARGO<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu krajowym<br/> - Ubezpieczenie OC przewoźnika drogowego w ruchu międzynarodowym<br/> - Ubezpieczenie OC spedytora</p>
               </div>
             </div>
             <div class="dropdown">
@@ -237,12 +228,11 @@
           <div class="box">
             <div class="icon icon-truck"></div>
             <h2 id="box-title">UBEZPIECZENIA KOMUNIKACYJNE</h2>
-            <h3 class="box-text">Jesteś kierowcą? Nie pozwól, aby wypadek zachwiał Twoją stabilnością finansową. Dobierzemy ofertę, która zagwarantuje profesjonalną obsługę powypadkową, auto zastępcze oraz fachową naprawę Twojego pojazdu.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia komunikacyjne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Na naszą kompleksową ofertę składają się m.in <br/><br/> - OC - ubezpieczenie odpowiedzialności cywilnej Obowiązkowe ubezpieczenie komunikacyjne dla wszystkich posiadaczy pojazdów mechanicznych, obejmujące swoim. zakres ochrony szkody
+                <p class="dropdown_p">Na naszą kompleksową ofertę składają się m.in <br/><br/> - OC - ubezpieczenie odpowiedzialności cywilnej Obowiązkowe ubezpieczenie komunikacyjne dla wszystkich posiadaczy pojazdów mechanicznych, obejmujące swoim. zakres ochrony szkody
                   wyrządzone osobom trzecim w związku z ruchem tych pojazdów.<br/><br/> - AC - ubezpieczenie Autocasco Ubezpieczenie to zapewnia finansową rekompensatę w przypadku uszkodzenia, zniszczenia albo utraty ubezpieczonego pojazdu i jego wyposażenia.
                   Szeroki zakres ochrony obejmujący wszelkie ryzyka (formuła „all risk”), możliwość wyboru zakresu ubezpieczenia zależnie od indywidualnych potrzeb<br/><br/> - Ubezpieczenie szyb - ubezpieczenie to zapewnia pokrycie kosztów naprawy lub
                   wymiany szyb w Twoim pojeździe w przypadku ich uszkodzenia (np. na skutek wandalizmu). Powstałe zdarzenie, objęte tą ochroną ubezpieczeniową nie spowoduje utraty zniżek za bezszkodowy przebieg ubezpieczenia AC.<br/><br/> - Ubezpieczenie
@@ -250,12 +240,18 @@
                   ona na uzyskanie szybkiej i profesjonalnej pomocy w awaryjnych sytuacjach na drodze.</p>
               </div>
             </div>
+            <div class="dropdown">
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bezpieczny w drodze
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown_p">Bezpieczny na Drodze - jest innowacyjnym i najbardziej konkurencyjnym ubezpieczeniem indywidualnym o charakterze ochronnym związanym z wypadkami komunikacyjnymi. Jego zakres ochrony dostosowany jest do potrzeb wszystkich użytkowników ruchu drogowego. Ubezpieczenie obejmuje także rowerzystów!<br><br>Gwarantuje ochronę finansową na wypadek nieprzewidzianych wypadków komunikacyjnych.</p>
+              </div>
+            </div>
 
           </div>
           <div class="box">
             <div class="icon icon-airplane"></div>
             <h2 id="box-title">UBEZPIECZENIA TURYSTYCZNE</h2>
-            <h3 class="box-text">Często podróżujesz? Chcesz mieć pewność, że w czasie podróży żaden nieprzewidziany wypadek nie pokrzyżuje Ci planów? Ubezpieczenie turystyczne to nie tylko wakacje ale także wyjazdy na staż, praktyki czy wyjazdy służbowe. Bądź spokojny o zwrot kosztów leczenia, ubezpieczenie następstw nieszczęśliwych wypadków (NNW) i odpowiedzialność cywilną (OC) w życiu prywatnym.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia turystyczne
               </button>
@@ -271,7 +267,6 @@
           <div class="box">
             <div class="icon icon-alarm"></div>
             <h2 id="box-title">UBEZPIECZENIA ZDROWOTNE</h2>
-            <h3 class="box-text">Ubezpieczenia zdrowotne gwarantują szeroki zakres opieki medycznej za niewielką składkę.</h3>
             <div class="dropdown">
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenia zdrowotne
               </button>
@@ -285,9 +280,8 @@
               <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pakiety medyczne
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Korzyści płynące z posiadania pakietu prywatnej opieki medycznej : <br/><br/> - Elastyczność w wyborze odpowiedniego pakietu w ramach indywidualnych potrzeb<br/> - Oszczędność czasu – krótki czas oczekiwania na wizytę, brak kolejek<br/>                  - Dostęp do lekarza w dowolnym miejscu w Polsce bez zbędnych procedur i formalności<br/> - Oszczędność pieniędzy<br/> - Prestiż wynikający z posiadania prywatnej opieki medycznej<br/> - Wyższa jakość życia, bezpieczeństwo oraz wygoda<br/>                  - Punktualne wizyty<br/>  - Indywidualne podejście do pacjenta<br/> - Gwarancja wysokiej jakości usług i kompleksowej opieki lekarskiej<br/> - Nielimitowany dostęp do lekarzy
-                  specjalistów bez skierowania od lekarza prowadzącego<br/> - Wysoce wykwalifikowany personel medyczny<br/> - Szybka i skuteczna rejestracja telefoniczna<br/> - Nowocześnie wyposażone placówki na terenie całej Polski<br/> - Telefoniczna
-                  obsługa pacjenta czynna 24 godz.</p>
+                <p class="dropdown_p"> Korzyści płynące z posiadania pakietu prywatnej opieki medycznej : <br/><br/> - Elastyczność w wyborze odpowiedniego pakietu w ramach indywidualnych potrzeb<br/> - Oszczędność czasu – krótki czas oczekiwania na wizytę, brak kolejek<br/> - Dostęp do lekarza w dowolnym miejscu w Polsce bez zbędnych procedur i formalności<br/> - Oszczędność pieniędzy<br/> - Prestiż wynikający z posiadania prywatnej opieki medycznej<br/> - Wyższa jakość życia, bezpieczeństwo oraz wygoda<br/>  - Punktualne wizyty<br/> - Indywidualne podejście do pacjenta<br/> - Gwarancja wysokiej jakości usług i kompleksowej opieki lekarskiej<br/> - Nielimitowany dostęp do lekarzy specjalistów bez skierowania od lekarza prowadzącego<br/> -
+                Wysoce wykwalifikowany personel medyczny<br/> - Szybka i skuteczna rejestracja telefoniczna<br/> - Nowocześnie wyposażone placówki na terenie całej Polski<br/> -Telefoniczna obsługa pacjenta czynna 24 godz.</p>
               </div>
             </div>
           </div>
@@ -295,9 +289,9 @@
             <div class="icon icon-justice"></div>
 
             <h2 id="box-title">OCHRONA PRAWNA</h2>
-            <h3 class="box-text">Ochrona prawna</h3>
+            <h3 class="box-text">Nieznajomość prawa szkodzi, lecz nie zwalania z jego przestrzegania.</h3>
             <div class="dropdown">
-              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ochrona prawna kierowcy i pojazdu
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ochrona Prawna kierowcy i pojazdu
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <p class="dropdown_p"> Ochrona prawna obejmuje swym zakresem Europę oraz wszystkie państwa leżące w basenie Morza Śródziemnego. <br/><br/> Kogo chroni ubezpieczenie?<br/><br/> - Właścicieli i kierowców pojazdu, którego dotyczy umowa.<br/> - Wszystkie osoby przewożone
@@ -308,12 +302,20 @@
               </div>
             </div>
             <div class="dropdown">
-              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">II produkt
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ubezpieczenie ochrony prawnej w życiu prywatnym
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <p class="dropdown_p"> Korzyści płynące z posiadania pakietu prywatnej opieki medycznej : <br/><br/> - Elastyczność w wyborze odpowiedniego pakietu w ramach indywidualnych potrzeb<br/> - Oszczędność czasu – krótki czas oczekiwania na wizytę, brak kolejek<br/>                  - Dostęp do lekarza w dowolnym miejscu w Polsce bez zbędnych procedur i formalności<br/> - Oszczędność pieniędzy<br/> - Prestiż wynikający z posiadania prywatnej opieki medycznej<br/> - Wyższa jakość życia, bezpieczeństwo oraz wygoda<br/>                  - Punktualne wizyty<br/> - Możliwość posiadania pakietu medycznego za 1 zł.<br/> - Indywidualne podejście do pacjenta<br/> - Gwarancja wysokiej jakości usług i kompleksowej opieki<br/> lekarskiej<br/> - Nielimitowany dostęp do lekarzy
-                  specjalistów bez skierowania od lekarza prowadzącego<br/> - Wysoce wykwalifikowany personel medyczny<br/> - Szybka i skuteczna rejestracja telefoniczna<br/> - Nowocześnie wyposażone placówki na terenie całej Polski<br/> - Telefoniczna
-                  obsługa pacjenta czynna 24 godz.</p>
+                <p class="dropdown_p"> <b>Ochrona prawna w sprawach codziennych np: </b><br/><br/> - Naruszenie dobrego imienia<br/> - Nieudany urlop <br/> - Wypadek<br/> - Zaniżone odszkodowanie<br/> - Kłopoty z reklamacją sprzętu<br/> - Publikacja kompromitujących zdjęć w internecie  itp<br/><br/>
+                  <b>Ochrona zawodowa (pracownika) np:</b><br/><br/>- Mobbing <br/> - Zwolnienie z pracy  <br/> - Brak należnej premii <br/> - Wypadek w pracy itp.<br/><br/>
+                  <b>Ochrona w drodze np: </b><br/><br/>- Poszkodowany w wypadeuk w komunikacji miejskiej <br/> - Odszkodowanie za wypadek w samochodzie  <br/> - potrącenie pieszego przez rowerzystę<br/> - Poślizgnięcie się na śliskim chodniku<br/> - Spór z warsztatem w kwestii naprawy samochodu  <br/> - Zarzut karny wobec kierowcy- potrącenie pieszego itp.<br><br>
+                   <b>Ochrona nieruchomości np: </b><br/><br/>- Nierzetelna ekipa remontowa <br/> - Zwolnienie z pray <br/> - Zalanie mieszkania <br/>- Spór o odszkodowanie <br/> - Spór z sąsiadem itp. <br/></p>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="button_offer btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Firma i wolny zawód
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <p class="dropdown_p"> <b>Ochrona  prawna</b>  to przede wszystkim optymalizacja wydatków firmy poprzez zabezpieczenie dostępu do określonych <b>usług i sfinansowanie kosztów</b> ewentualnego <b>procesu</b> w sprawach takich jak: <br/><br/> - Umowy z dostawcami<br/> - Umowy ubezpieczenia<br/>- Spory z pracownikami <br/> - Sądowe spory podatkowe<br/> - Spory z prawa gospodarczego<br/> - Dochodzenie odszkodowań<br/> - Prawo karne i wykroczenia<br/></p>
               </div>
             </div>
           </div>
@@ -325,28 +327,27 @@
       <div class="container-main">
         <div id="about_partners">
           <h1 class="partners_h1">NASI PARTNERZY<h1>
-        <h3 class="partners_h3">Współpracujemy z wiodącymi na rynku Towarzystwami Ubezpieczeniowymi,
-                              dzięki temu oferujemy Państwu szeroki wachlarz z produktów OC i AC,
-                                a także bogaty wybór ubezpieczeń majątkowych.</h3>
+        <h3 class="partners_h3">Współpracujemy z wiodącymi na rynku Towarzystwami Ubezpieczeniowymi,dzięki temu oferujemy Państwu szeroki wachlarz z produktów.</h3>
       </div>
       <div class="container both partners_container">
         <div class="partner_box partner_1"></div>
         <div class="partner_box partner_2"></div>
         <div class="partner_box partner_3"></div>
         <div class="partner_box partner_4"></div>
+        <div class="partner_box partner_5"></div>
         <div class="partner_box partner_6"></div>
         <div class="partner_box partner_7"></div>
         <div class="partner_box partner_8"></div>
       </div>
       <div class="container both partners_container">
+        <div class="partner_box partner_9"></div>
         <div class="partner_box partner_10"></div>
         <div class="partner_box partner_11"></div>
         <div class="partner_box partner_12"></div>
         <div class="partner_box partner_13"></div>
+        <div class="partner_box partner_14"></div>
         <div class="partner_box partner_15"></div>
         <div class="partner_box partner_16"></div>
-        <div class="partner_box partner_17"></div>
-        <div class="partner_box partner_18"></div>
       </div>
     </div>
     <div class="bottom-line"></div>

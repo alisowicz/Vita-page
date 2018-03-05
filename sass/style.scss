@@ -1,10 +1,9 @@
 @import 'variables';
 @media screen and (max-width: 540px) {
   .screen-background {
-  background-position: -389px -34px;
+    background-position: -389px -34px;
   }
 }
-
 @media screen and (max-width: 750px) {
   .content_offers {
     -webkit-flex-direction: column;
@@ -35,20 +34,21 @@
   margin: 0;
   font-size: $font-size16;
 }
+
 .justify-content-end {
-  margin: 30px 0px;
+  margin: 30px 0;
   font-size: 24px;
   font-weight: bold;
-
 }
 
 a:link {
   text-decoration: none;
   color: rgba(71, 81, 82, 0.84);
   position: relative;
-    &:hover {
-      text-decoration: none;
-      color: rgba(71, 81, 82, 0.84);
+
+  &:hover {
+    text-decoration: none;
+    color: rgba(71, 81, 82, 0.84);
   }
 }
 
@@ -102,7 +102,7 @@ a:visited {
   flex-direction: column;
 
   .screen-background {
-    background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.08) ), url("images/family.jpg");
+    background: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.5) ), url("images/family.jpg");
     background-size: cover;
     background-position: 59% 10%;
     background-repeat: no-repeat;
@@ -113,15 +113,13 @@ a:visited {
   .title-main {
     font-size: $font-size30;
     text-align: left;
-    text-shadow: 1px 2px #666465;
+    text-shadow: 1px 2px #005296;
     font-style: italic;
-    bottom: -2%;
+    bottom: -1%;
     position: absolute;
     color: white;
     left: 6%;
-    width: 455px;
-    height: 200px;
-  }
+    line-height: 1.5;     }
 }
 
 .partners {
@@ -165,31 +163,36 @@ a:visited {
       height: 70px;
       background-repeat: no-repeat;
       background-size: contain;
-
     }
 
     .partner_1 {
+      width: 345px;
       background-image: url("images/aviva.png");
       background-position: center center;
     }
 
     .partner_2 {
-      background-image: url("images/pramerica.png");
+      background-image: url("images/compensa.png");
       background-position: center center;
     }
 
     .partner_3 {
-      background-image: url("images/proama.png");
+      background-image: url("images/warta.png");
       background-position: center center;
     }
 
     .partner_4 {
-      background-image: url("images/youcandrive.png");
+      background-image: url("images/pko.png");
+      background-position: center center;
+    }
+
+    .partner_5 {
+      background-image: url("images/axa.png");
       background-position: center center;
     }
 
     .partner_6 {
-      background-image: url("images/macif.png");
+      background-image: url("images/das.png");
       background-position: center center;
     }
 
@@ -199,52 +202,47 @@ a:visited {
     }
 
     .partner_8 {
-      background-image: url("images/interrisk.png");
-      background-position: center center;
-    }
-
-    .partner_9 {
-      background-image: url("images/hdi.png");
-      background-position: center center;
-    }
-
-    .partner_10 {
-      background-image: url("images/gothaer.png");
-      background-position: center center;
-    }
-
-    .partner_11 {
       background-image: url("images/ergo.png");
       background-position: center center;
     }
 
+    .partner_9 {
+      background-image: url("images/macif.png");
+      background-position: center center;
+    }
+
+    .partner_10 {
+      background-image: url("images/polisa.png");
+      background-position: center center;
+    }
+
+    .partner_11 {
+      background-image: url("images/pramerica.png");
+      background-position: center center;
+    }
+
     .partner_12 {
-      background-image: url("images/das.png");
+      background-image: url("images/lloyds.png");
       background-position: center center;
     }
 
     .partner_13 {
-      background-image: url("images/compensa.png");
-      background-position: center center;
-    }
-
-    .partner_15 {
-      background-image: url("images/axa.png");
-      background-position: center center;
-    }
-
-    .partner_16 {
-      background-image: url("images/mtu.png");
-      background-position: center center;
-    }
-
-    .partner_17 {
       background-image: url("images/allianz.png");
       background-position: center center;
     }
 
-    .partner_18 {
-      background-image: url("images/aegon.png");
+    .partner_14 {
+      background-image: url("images/mtu.png");
+      background-position: center center;
+    }
+
+    .partner_15 {
+      background-image: url("images/proama.png");
+      background-position: center center;
+    }
+
+    .partner_16 {
+      background-image: url("images/gothaer.png");
       background-position: center center;
     }
   }
@@ -289,7 +287,7 @@ a:visited {
   flex-direction: row;
   justify-content: space-between;
   box-shadow: 1px 3px 7px 0 rgba(0, 0, 0, 0.75);
-    transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .place_box {
@@ -376,12 +374,9 @@ a:visited {
         }
       }
 
-
       .icon-heart:before {
         content: "\e9da";
-
       }
-
 
       .icon-home3:before {
         content: "\e902";
@@ -398,22 +393,18 @@ a:visited {
       .icon-alarm:before {
         content: "\e950";
       }
+
       .icon-justice:before {
         content: "\e900";
       }
 
-
       #box-title {
         color: white;
         font-size: $font-size28;
-        margin-bottom: 10px;
+        margin-bottom: 35px;
         margin-top: 10px;
         font-weight: bold;
-
-
       }
-
-
       .box-text {
         color: white;
         font-size: $font-size16;
