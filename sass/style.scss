@@ -9,7 +9,11 @@
     -webkit-flex-direction: column;
     flex-direction: column!important;
   }
-
+  @media screen and (max-width: 320px) {
+     body {
+        font-size: 2em;
+     }
+    }
   #about_place {
     flex-direction: column!important;
     text-align: center!important;
@@ -110,16 +114,6 @@ a:visited {
     width: 100%;
   }
 
-  .title-main {
-    font-size: $font-size30;
-    text-align: left;
-    text-shadow: 1px 2px #005296;
-    font-style: italic;
-    bottom: -1%;
-    position: absolute;
-    color: white;
-    left: 6%;
-    line-height: 1.5;     }
 }
 
 .partners {
@@ -166,7 +160,6 @@ a:visited {
     }
 
     .partner_1 {
-      width: 345px;
       background-image: url("images/aviva.png");
       background-position: center center;
     }
@@ -401,19 +394,19 @@ a:visited {
       #box-title {
         color: white;
         font-size: $font-size28;
-        margin-bottom: 35px;
+        margin-bottom: 10px;
         margin-top: 10px;
         font-weight: bold;
       }
-      .box-text {
-        color: white;
-        font-size: $font-size16;
-        margin: 0 auto;
-        max-width: 100%;
-        font-weight: normal;
-        line-height: 25px;
-        padding-bottom: 15px;
-      }
+      // .box-text {
+      //   color: white;
+      //   font-size: $font-size16;
+      //   margin: 0 auto;
+      //   max-width: 100%;
+      //   font-weight: normal;
+      //   line-height: 25px;
+      //   padding-bottom: 15px;
+      // }
     }
   }
 }
@@ -625,4 +618,30 @@ div.section span {
     transition: all 0.3s ease-out 0s;
     border-radius: 3px;
   }
+}
+
+.title-pack{
+  text-align: left;
+  position: absolute;
+  // bottom: 2%;
+  color: white;
+  left: 6%;
+  width: 372px;
+  line-height: 1.3;
+  background-color: #00529621;
+  padding: 58px;
+}
+.title-main {
+  font-size: $font-size30;
+  text-shadow: 1px 2px #0c0d0d;
+  font-style: italic;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+.title-main-bottom{
+  font-size: $font-size28;
+  text-shadow: 1px 2px #0c0d0d;
+  font-style: italic;
+  line-height: 1.3;
+
 }
